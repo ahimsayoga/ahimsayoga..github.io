@@ -55,27 +55,76 @@ var _user$project$Main$view = function (model) {
 						_elm_lang$core$Basics$toString(model.count))),
 				_1: {
 					ctor: '::',
-					_0: A5(
-						_MichaelCombs28$elm_mdl$Material_Button$render,
-						_user$project$Main$Mdl,
+					_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$containerFluid(
 						{
 							ctor: '::',
-							_0: 0,
-							_1: {ctor: '[]'}
-						},
-						model.mdl,
-						{
-							ctor: '::',
-							_0: _MichaelCombs28$elm_mdl$Material_Button$onClick(_user$project$Main$Increase),
-							_1: {
-								ctor: '::',
-								_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'margin', '0 24px'),
-								_1: {ctor: '[]'}
-							}
-						},
-						{
-							ctor: '::',
-							_0: _elm_lang$html$Html$text('Increase'),
+							_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$row(
+								{
+									ctor: '::',
+									_0: A2(
+										_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$column,
+										{
+											ctor: '::',
+											_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$ExtraSmall(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Two),
+											_1: {
+												ctor: '::',
+												_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Small(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Two),
+												_1: {
+													ctor: '::',
+													_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Medium(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Four),
+													_1: {
+														ctor: '::',
+														_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Large(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Four),
+														_1: {ctor: '[]'}
+													}
+												}
+											}
+										},
+										{ctor: '[]'}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$column,
+											{
+												ctor: '::',
+												_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$ExtraSmall(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Ten),
+												_1: {
+													ctor: '::',
+													_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Small(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Ten),
+													_1: {
+														ctor: '::',
+														_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Medium(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Eight),
+														_1: {
+															ctor: '::',
+															_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Large(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Eight),
+															_1: {ctor: '[]'}
+														}
+													}
+												}
+											},
+											{
+												ctor: '::',
+												_0: A3(
+													_JeremyBellows$elm_bootstrapify$Bootstrap_Wells$well,
+													_JeremyBellows$elm_bootstrapify$Bootstrap_Wells$WellLarge,
+													{ctor: '[]'},
+													{
+														ctor: '::',
+														_0: A2(
+															_elm_lang$html$Html$h1,
+															{ctor: '[]'},
+															{
+																ctor: '::',
+																_0: _elm_lang$html$Html$text('Hello World!'),
+																_1: {ctor: '[]'}
+															}),
+														_1: {ctor: '[]'}
+													}),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}
+								}),
 							_1: {ctor: '[]'}
 						}),
 					_1: {
@@ -85,21 +134,47 @@ var _user$project$Main$view = function (model) {
 							_user$project$Main$Mdl,
 							{
 								ctor: '::',
-								_0: 1,
+								_0: 0,
 								_1: {ctor: '[]'}
 							},
 							model.mdl,
 							{
 								ctor: '::',
-								_0: _MichaelCombs28$elm_mdl$Material_Button$onClick(_user$project$Main$Reset),
-								_1: {ctor: '[]'}
+								_0: _MichaelCombs28$elm_mdl$Material_Button$onClick(_user$project$Main$Increase),
+								_1: {
+									ctor: '::',
+									_0: A2(_MichaelCombs28$elm_mdl$Material_Options$css, 'margin', '0 24px'),
+									_1: {ctor: '[]'}
+								}
 							},
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html$text('Reset'),
+								_0: _elm_lang$html$Html$text('Increase'),
 								_1: {ctor: '[]'}
 							}),
-						_1: {ctor: '[]'}
+						_1: {
+							ctor: '::',
+							_0: A5(
+								_MichaelCombs28$elm_mdl$Material_Button$render,
+								_user$project$Main$Mdl,
+								{
+									ctor: '::',
+									_0: 1,
+									_1: {ctor: '[]'}
+								},
+								model.mdl,
+								{
+									ctor: '::',
+									_0: _MichaelCombs28$elm_mdl$Material_Button$onClick(_user$project$Main$Reset),
+									_1: {ctor: '[]'}
+								},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text('Reset'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}
 					}
 				}
 			}));

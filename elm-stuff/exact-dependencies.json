@@ -1,5 +1,6 @@
 {
     "MichaelCombs28/elm-parts": "1.0.0",
+    "JeremyBellows/elm-bootstrapify": "8.0.2",
     "elm-lang/virtual-dom": "2.0.4",
     "elm-lang/mouse": "1.0.1",
     "MichaelCombs28/elm-mdl": "1.0.1",

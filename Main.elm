@@ -12,6 +12,8 @@ import Material
 import Material.Scheme
 import Material.Button as Button
 import Material.Options exposing (css)
+import Bootstrap.Grid exposing (..)
+import Bootstrap.Wells exposing (..)
 
 
 -- MODEL
@@ -97,6 +99,19 @@ view model =
              message when clicked. The `css ...` option adds CSS styling to the button.
              See `Material.Options` for details on options.
           -}
+        , containerFluid
+            [ row
+                [ column [ ExtraSmall Two, Small Two, Medium Four, Large Four ] []
+                , column [ ExtraSmall Ten, Small Ten, Medium Eight, Large Eight ]
+                    [ well WellLarge
+                        []
+                        [ Html.h1 []
+                            [ Html.text "Hello World!"
+                            ]
+                        ]
+                    ]
+                ]
+            ]
         , Button.render Mdl
             [ 0 ]
             model.mdl
