@@ -8145,41 +8145,256 @@ var _elm_lang$html$Html_Attributes$classList = function (list) {
 };
 var _elm_lang$html$Html_Attributes$style = _elm_lang$virtual_dom$VirtualDom$style;
 
-var _user$project$Main$temp = A2(
-	_elm_lang$html$Html$div,
-	{ctor: '[]'},
-	{
-		ctor: '::',
-		_0: A2(
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$column = F2(
+	function (columns, htmlList) {
+		var flattenColumnList = F2(
+			function (columnOne, columnTwo) {
+				return A2(
+					_elm_lang$core$Basics_ops['++'],
+					columnOne,
+					A2(_elm_lang$core$Basics_ops['++'], ' ', columnTwo));
+			});
+		var getColumnSizeString = function (columnSize) {
+			var _p0 = columnSize;
+			switch (_p0.ctor) {
+				case 'One':
+					return '1';
+				case 'Two':
+					return '2';
+				case 'Three':
+					return '3';
+				case 'Four':
+					return '4';
+				case 'Five':
+					return '5';
+				case 'Six':
+					return '6';
+				case 'Seven':
+					return '7';
+				case 'Eight':
+					return '8';
+				case 'Nine':
+					return '9';
+				case 'Ten':
+					return '10';
+				case 'Eleven':
+					return '11';
+				default:
+					return '12';
+			}
+		};
+		var getColumnString = function (columnType) {
+			var _p1 = columnType;
+			switch (_p1.ctor) {
+				case 'ExtraSmall':
+					return A2(
+						_elm_lang$core$Basics_ops['++'],
+						'col-xs-',
+						getColumnSizeString(_p1._0));
+				case 'Small':
+					return A2(
+						_elm_lang$core$Basics_ops['++'],
+						'col-sm-',
+						getColumnSizeString(_p1._0));
+				case 'Medium':
+					return A2(
+						_elm_lang$core$Basics_ops['++'],
+						'col-md-',
+						getColumnSizeString(_p1._0));
+				default:
+					return A2(
+						_elm_lang$core$Basics_ops['++'],
+						'col-lg-',
+						getColumnSizeString(_p1._0));
+			}
+		};
+		var columnClasses = A3(
+			_elm_lang$core$List$foldr,
+			flattenColumnList,
+			'',
+			A2(_elm_lang$core$List$map, getColumnString, columns));
+		return A2(
 			_elm_lang$html$Html$div,
 			{
 				ctor: '::',
-				_0: _elm_lang$html$Html_Attributes$class('brand'),
+				_0: _elm_lang$html$Html_Attributes$class(columnClasses),
 				_1: {ctor: '[]'}
 			},
-			{
-				ctor: '::',
-				_0: _elm_lang$html$Html$text('Ahimsa Yoga'),
-				_1: {ctor: '[]'}
-			}),
-		_1: {
+			htmlList);
+	});
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$row = function (htmlList) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
 			ctor: '::',
-			_0: A2(
-				_elm_lang$html$Html$div,
+			_0: _elm_lang$html$Html_Attributes$class('row'),
+			_1: {ctor: '[]'}
+		},
+		htmlList);
+};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$container = function (htmlList) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('container'),
+			_1: {ctor: '[]'}
+		},
+		htmlList);
+};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$containerFluid = function (htmlList) {
+	return A2(
+		_elm_lang$html$Html$div,
+		{
+			ctor: '::',
+			_0: _elm_lang$html$Html_Attributes$class('container-fluid'),
+			_1: {ctor: '[]'}
+		},
+		htmlList);
+};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Twelve = {ctor: 'Twelve'};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Eleven = {ctor: 'Eleven'};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Ten = {ctor: 'Ten'};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Nine = {ctor: 'Nine'};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Eight = {ctor: 'Eight'};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Seven = {ctor: 'Seven'};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Six = {ctor: 'Six'};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Five = {ctor: 'Five'};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Four = {ctor: 'Four'};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Three = {ctor: 'Three'};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Two = {ctor: 'Two'};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$One = {ctor: 'One'};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Large = function (a) {
+	return {ctor: 'Large', _0: a};
+};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Medium = function (a) {
+	return {ctor: 'Medium', _0: a};
+};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Small = function (a) {
+	return {ctor: 'Small', _0: a};
+};
+var _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$ExtraSmall = function (a) {
+	return {ctor: 'ExtraSmall', _0: a};
+};
+
+var _user$project$Main$subscriptions = function (model) {
+	return _elm_lang$core$Platform_Sub$none;
+};
+var _user$project$Main$view = function (model) {
+	return _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$containerFluid(
+		{
+			ctor: '::',
+			_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$row(
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('address-bar'),
-					_1: {ctor: '[]'}
-				},
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html$text('Japan'),
+					_0: A2(
+						_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$column,
+						{
+							ctor: '::',
+							_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$ExtraSmall(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Ten),
+							_1: {
+								ctor: '::',
+								_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Small(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Ten),
+								_1: {
+									ctor: '::',
+									_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Medium(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Twelve),
+									_1: {
+										ctor: '::',
+										_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Large(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Twelve),
+										_1: {ctor: '[]'}
+									}
+								}
+							}
+						},
+						{
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$h1,
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('brand'),
+									_1: {ctor: '[]'}
+								},
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text('Ahimsa Yoga'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}),
 					_1: {ctor: '[]'}
 				}),
-			_1: {ctor: '[]'}
-		}
+			_1: {
+				ctor: '::',
+				_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$row(
+					{
+						ctor: '::',
+						_0: A2(
+							_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$column,
+							{
+								ctor: '::',
+								_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$ExtraSmall(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Ten),
+								_1: {
+									ctor: '::',
+									_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Small(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Ten),
+									_1: {
+										ctor: '::',
+										_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Medium(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Twelve),
+										_1: {
+											ctor: '::',
+											_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Large(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Twelve),
+											_1: {ctor: '[]'}
+										}
+									}
+								}
+							},
+							{
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$div,
+									{ctor: '[]'},
+									{
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$div,
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html_Attributes$class('address-bar'),
+												_1: {ctor: '[]'}
+											},
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html$text('Komatsu-shi | Ishikawa, Japan'),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}),
+						_1: {ctor: '[]'}
+					}),
+				_1: {ctor: '[]'}
+			}
+		});
+};
+var _user$project$Main$update = F2(
+	function (msg, model) {
+		var _p0 = msg;
+		return A2(
+			_elm_lang$core$Platform_Cmd_ops['!'],
+			model,
+			{ctor: '[]'});
 	});
-var _user$project$Main$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(_user$project$Main$temp);
+var _user$project$Main$Model = function (a) {
+	return {name: a};
+};
+var _user$project$Main$init = A2(
+	_elm_lang$core$Platform_Cmd_ops['!'],
+	_user$project$Main$Model('world'),
+	{ctor: '[]'});
+var _user$project$Main$main = _elm_lang$html$Html$program(
+	{init: _user$project$Main$init, view: _user$project$Main$view, update: _user$project$Main$update, subscriptions: _user$project$Main$subscriptions})();
+var _user$project$Main$NoOp = {ctor: 'NoOp'};
 
 var Elm = {};
 Elm['Main'] = Elm['Main'] || {};
