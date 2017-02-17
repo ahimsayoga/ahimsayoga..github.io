@@ -3,6 +3,7 @@ module Main exposing (..)
 import Html exposing (..)
 import Html.Attributes exposing (..)
 import Bootstrap.Grid exposing (..)
+import Bootstrap.Navbar exposing (..)
 
 
 main : Program Never Model Msg
@@ -62,6 +63,14 @@ view model =
                 [ Html.div []
                     [ div [ class "address-bar" ]
                         [ text ("Komatsu-shi | Ishikawa, Japan") ]
+                    ]
+                ]
+            ]
+        , row
+            [ column [ ExtraSmall Ten, Small Ten, Medium Twelve, Large Twelve ]
+                [ Html.div []
+                    [ div [ class "nav-bar" ]
+                        [ navbar DefaultNavbar [] [] ]
                     ]
                 ]
             ]
