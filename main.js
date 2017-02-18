@@ -8566,28 +8566,103 @@ var _user$project$Main$view = function (model) {
 								},
 								{
 									ctor: '::',
-									_0: A2(
-										_elm_lang$html$Html$div,
+									_0: A3(
+										_JeremyBellows$elm_bootstrapify$Bootstrap_Navbar$navbar,
+										_JeremyBellows$elm_bootstrapify$Bootstrap_Navbar$DefaultNavbar,
 										{ctor: '[]'},
 										{
 											ctor: '::',
 											_0: A2(
-												_elm_lang$html$Html$div,
-												{
-													ctor: '::',
-													_0: _elm_lang$html$Html_Attributes$class('nav-bar'),
-													_1: {ctor: '[]'}
-												},
-												{
-													ctor: '::',
-													_0: A3(
-														_JeremyBellows$elm_bootstrapify$Bootstrap_Navbar$navbar,
-														_JeremyBellows$elm_bootstrapify$Bootstrap_Navbar$DefaultNavbar,
-														{ctor: '[]'},
-														{ctor: '[]'}),
-													_1: {ctor: '[]'}
-												}),
-											_1: {ctor: '[]'}
+												_JeremyBellows$elm_bootstrapify$Bootstrap_Navbar$navbarHeader,
+												{ctor: '[]'},
+												{ctor: '[]'}),
+											_1: {
+												ctor: '::',
+												_0: A2(
+													_JeremyBellows$elm_bootstrapify$Bootstrap_Navbar$navbarCollapse,
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html_Attributes$id('collapseMe'),
+														_1: {ctor: '[]'}
+													},
+													{
+														ctor: '::',
+														_0: A4(
+															_JeremyBellows$elm_bootstrapify$Bootstrap_Navbar$navbarList,
+															_JeremyBellows$elm_bootstrapify$Bootstrap_Navbar$NavbarNav,
+															_JeremyBellows$elm_bootstrapify$Bootstrap_Navbar$NavbarDefault,
+															{ctor: '[]'},
+															{
+																ctor: '::',
+																_0: A2(
+																	_elm_lang$html$Html$li,
+																	{ctor: '[]'},
+																	{
+																		ctor: '::',
+																		_0: A2(
+																			_elm_lang$html$Html$a,
+																			{
+																				ctor: '::',
+																				_0: _elm_lang$html$Html_Attributes$href('index.html'),
+																				_1: {ctor: '[]'}
+																			},
+																			{
+																				ctor: '::',
+																				_0: _elm_lang$html$Html$text('Home'),
+																				_1: {ctor: '[]'}
+																			}),
+																		_1: {ctor: '[]'}
+																	}),
+																_1: {
+																	ctor: '::',
+																	_0: A2(
+																		_elm_lang$html$Html$li,
+																		{ctor: '[]'},
+																		{
+																			ctor: '::',
+																			_0: A2(
+																				_elm_lang$html$Html$a,
+																				{
+																					ctor: '::',
+																					_0: _elm_lang$html$Html_Attributes$href('index.html'),
+																					_1: {ctor: '[]'}
+																				},
+																				{
+																					ctor: '::',
+																					_0: _elm_lang$html$Html$text('About'),
+																					_1: {ctor: '[]'}
+																				}),
+																			_1: {ctor: '[]'}
+																		}),
+																	_1: {
+																		ctor: '::',
+																		_0: A2(
+																			_elm_lang$html$Html$li,
+																			{ctor: '[]'},
+																			{
+																				ctor: '::',
+																				_0: A2(
+																					_elm_lang$html$Html$a,
+																					{
+																						ctor: '::',
+																						_0: _elm_lang$html$Html_Attributes$href('index.html'),
+																						_1: {ctor: '[]'}
+																					},
+																					{
+																						ctor: '::',
+																						_0: _elm_lang$html$Html$text('Contact'),
+																						_1: {ctor: '[]'}
+																					}),
+																				_1: {ctor: '[]'}
+																			}),
+																		_1: {ctor: '[]'}
+																	}
+																}
+															}),
+														_1: {ctor: '[]'}
+													}),
+												_1: {ctor: '[]'}
+											}
 										}),
 									_1: {ctor: '[]'}
 								}),

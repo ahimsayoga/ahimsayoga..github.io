@@ -68,9 +68,30 @@ view model =
             ]
         , row
             [ column [ ExtraSmall Ten, Small Ten, Medium Twelve, Large Twelve ]
-                [ Html.div []
-                    [ div [ class "nav-bar" ]
-                        [ navbar DefaultNavbar [] [] ]
+                [ navbar DefaultNavbar
+                    []
+                    [ navbarHeader [] []
+                    , navbarCollapse [ id "collapseMe" ]
+                        [ navbarList (NavbarNav)
+                            NavbarDefault
+                            []
+                            [ li []
+                                [ a [ href "index.html" ]
+                                    [ text "Home"
+                                    ]
+                                ]
+                            , li []
+                                [ a [ href "index.html" ]
+                                    [ text "About"
+                                    ]
+                                ]
+                            , li []
+                                [ a [ href "index.html" ]
+                                    [ text "Contact"
+                                    ]
+                                ]
+                            ]
+                        ]
                     ]
                 ]
             ]
