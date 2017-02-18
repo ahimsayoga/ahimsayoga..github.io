@@ -1,0 +1,6 @@
+[submodule "startbootstrap-business-casual"]
+	path = startbootstrap-business-casual
+	url = https://github.com/blackrockdigital/startbootstrap-business-casual/
+[submodule "src/startbootstrap-business-casual"]
+	path = src/startbootstrap-business-casual
+	url = https://github.com/blackrockdigital/startbootstrap-business-casual
