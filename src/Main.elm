@@ -4,14 +4,25 @@ import Html exposing (..)
 import Html.Attributes exposing (..)
 import Bootstrap.Grid exposing (..)
 import Bootstrap.Navbar exposing (..)
+import App.Routes as Routes
+import Navigation exposing (Location)
+
+
+type Msg
+    = ChangeRoute Sitemap
+
+
+parseRoute : Location -> Msg
+parseRoute =
+    Routes.match >> ChangeRoute
 
 
 main : Program Never Model Msg
 main =
-    Html.program
+    Navigation.program parseRoute
         { init = init
-        , view = view
         , update = update
+        , view = view
         , subscriptions = subscriptions
         }
 
@@ -29,14 +40,6 @@ init =
     Model "world" ! []
 
 
-
--- Update
-
-
-type Msg
-    = NoOp
-
-
 update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
@@ -52,14 +55,14 @@ view : Model -> Html Msg
 view model =
     containerFluid
         [ row
-            [ column [ ExtraSmall Ten, Small Ten, Medium Twelve, Large Twelve ]
+            [ column []
                 [ Html.h1 [ class "brand" ]
                     [ Html.text "Ahimsa Yoga"
                     ]
                 ]
             ]
         , row
-            [ column [ ExtraSmall Ten, Small Ten, Medium Twelve, Large Twelve ]
+            [ column [ Large Twelve ]
                 [ Html.div []
                     [ div [ class "address-bar" ]
                         [ text ("Komatsu-shi | Ishikawa, Japan") ]
@@ -67,7 +70,7 @@ view model =
                 ]
             ]
         , row
-            [ column [ ExtraSmall Ten, Small Ten, Medium Twelve, Large Twelve ]
+            [ column [ Large Twelve ]
                 [ navbar DefaultNavbar
                     []
                     [ navbarHeader [] []
@@ -91,6 +94,16 @@ view model =
                                     ]
                                 ]
                             ]
+                        ]
+                    ]
+                ]
+            ]
+        , row
+            [ Html.div [ class "box" ]
+                [ column [ Large Twelve ]
+                    [ Html.div []
+                        [ h2 [ class "intro-text text-center" ]
+                            [ text ("Build a website") ]
                         ]
                     ]
                 ]

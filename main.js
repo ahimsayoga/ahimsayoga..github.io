@@ -8456,23 +8456,7 @@ var _user$project$Main$view = function (model) {
 					ctor: '::',
 					_0: A2(
 						_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$column,
-						{
-							ctor: '::',
-							_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$ExtraSmall(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Ten),
-							_1: {
-								ctor: '::',
-								_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Small(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Ten),
-								_1: {
-									ctor: '::',
-									_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Medium(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Twelve),
-									_1: {
-										ctor: '::',
-										_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Large(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Twelve),
-										_1: {ctor: '[]'}
-									}
-								}
-							}
-						},
+						{ctor: '[]'},
 						{
 							ctor: '::',
 							_0: A2(
@@ -8500,20 +8484,8 @@ var _user$project$Main$view = function (model) {
 							_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$column,
 							{
 								ctor: '::',
-								_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$ExtraSmall(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Ten),
-								_1: {
-									ctor: '::',
-									_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Small(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Ten),
-									_1: {
-										ctor: '::',
-										_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Medium(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Twelve),
-										_1: {
-											ctor: '::',
-											_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Large(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Twelve),
-											_1: {ctor: '[]'}
-										}
-									}
-								}
+								_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Large(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Twelve),
+								_1: {ctor: '[]'}
 							},
 							{
 								ctor: '::',
@@ -8549,20 +8521,8 @@ var _user$project$Main$view = function (model) {
 								_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$column,
 								{
 									ctor: '::',
-									_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$ExtraSmall(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Ten),
-									_1: {
-										ctor: '::',
-										_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Small(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Ten),
-										_1: {
-											ctor: '::',
-											_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Medium(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Twelve),
-											_1: {
-												ctor: '::',
-												_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Large(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Twelve),
-												_1: {ctor: '[]'}
-											}
-										}
-									}
+									_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Large(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Twelve),
+									_1: {ctor: '[]'}
 								},
 								{
 									ctor: '::',
@@ -8668,7 +8628,56 @@ var _user$project$Main$view = function (model) {
 								}),
 							_1: {ctor: '[]'}
 						}),
-					_1: {ctor: '[]'}
+					_1: {
+						ctor: '::',
+						_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$row(
+							{
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$div,
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('box'),
+										_1: {ctor: '[]'}
+									},
+									{
+										ctor: '::',
+										_0: A2(
+											_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$column,
+											{
+												ctor: '::',
+												_0: _JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Large(_JeremyBellows$elm_bootstrapify$Bootstrap_Grid$Twelve),
+												_1: {ctor: '[]'}
+											},
+											{
+												ctor: '::',
+												_0: A2(
+													_elm_lang$html$Html$div,
+													{ctor: '[]'},
+													{
+														ctor: '::',
+														_0: A2(
+															_elm_lang$html$Html$h2,
+															{
+																ctor: '::',
+																_0: _elm_lang$html$Html_Attributes$class('intro-text text-center'),
+																_1: {ctor: '[]'}
+															},
+															{
+																ctor: '::',
+																_0: _elm_lang$html$Html$text('Build a website'),
+																_1: {ctor: '[]'}
+															}),
+														_1: {ctor: '[]'}
+													}),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}),
+						_1: {ctor: '[]'}
+					}
 				}
 			}
 		});
