@@ -151,10 +151,6 @@ require.register("elm/Main.elm", function(exports, require, module) {
 
 });
 
-;require.register("elm/Post.elm", function(exports, require, module) {
-
-});
-
 ;require.register("elm/Routes.elm", function(exports, require, module) {
 
 });
