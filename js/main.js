@@ -14548,6 +14548,11 @@ var _rundis$elm_bootstrap$Bootstrap_Navbar$dropdownHeader = function (children) 
 };
 
 var _user$project$Routes$NotFoundR = {ctor: 'NotFoundR'};
+var _user$project$Routes$ContactR = {ctor: 'ContactR'};
+var _user$project$Routes$contactR = A2(
+	_Bogdanp$elm_route$Route_ops[':='],
+	_user$project$Routes$ContactR,
+	_Bogdanp$elm_route$Route$static('contact'));
 var _user$project$Routes$AboutR = {ctor: 'AboutR'};
 var _user$project$Routes$aboutR = A2(
 	_Bogdanp$elm_route$Route_ops[':='],
@@ -14573,7 +14578,11 @@ var _user$project$Routes$sitemap = _Bogdanp$elm_route$Route$router(
 			_1: {
 				ctor: '::',
 				_0: _user$project$Routes$aboutR,
-				_1: {ctor: '[]'}
+				_1: {
+					ctor: '::',
+					_0: _user$project$Routes$contactR,
+					_1: {ctor: '[]'}
+				}
 			}
 		}
 	});
@@ -14607,12 +14616,17 @@ var _user$project$Routes$toString = function (r) {
 				_Bogdanp$elm_route$Route$reverse,
 				_user$project$Routes$aboutR,
 				{ctor: '[]'});
+		case 'ContactR':
+			return A2(
+				_Bogdanp$elm_route$Route$reverse,
+				_user$project$Routes$contactR,
+				{ctor: '[]'});
 		default:
 			return _elm_lang$core$Native_Utils.crashCase(
 				'Routes',
 				{
-					start: {line: 42, column: 5},
-					end: {line: 53, column: 49}
+					start: {line: 48, column: 5},
+					end: {line: 62, column: 49}
 				},
 				_p2)('cannot render NotFound');
 	}
@@ -14628,9 +14642,13 @@ var _user$project$Main$loading = _rundis$elm_bootstrap$Bootstrap_Alert$warning(
 		_0: _elm_lang$html$Html$text('Loading ...'),
 		_1: {ctor: '[]'}
 	});
-var _user$project$Main$schedule = A2(
+var _user$project$Main$contact = A2(
 	_elm_lang$html$Html$div,
-	{ctor: '[]'},
+	{
+		ctor: '::',
+		_0: _elm_lang$html$Html_Attributes$class('box'),
+		_1: {ctor: '[]'}
+	},
 	{
 		ctor: '::',
 		_0: A2(
@@ -14648,7 +14666,7 @@ var _user$project$Main$schedule = A2(
 				},
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html$text('Schedule'),
+					_0: _elm_lang$html$Html$text('Contact'),
 					_1: {ctor: '[]'}
 				}),
 			_1: {
@@ -14664,7 +14682,7 @@ var _user$project$Main$schedule = A2(
 						{ctor: '[]'},
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html$text('Schedule page text'),
+							_0: _elm_lang$html$Html$text('Contact page text'),
 							_1: {ctor: '[]'}
 						}),
 					_1: {ctor: '[]'}
@@ -14677,43 +14695,267 @@ var _user$project$Main$about = A2(
 	{ctor: '[]'},
 	{
 		ctor: '::',
-		_0: A2(
-			_elm_lang$html$Html$hr,
-			{ctor: '[]'},
-			{ctor: '[]'}),
-		_1: {
-			ctor: '::',
-			_0: A2(
-				_elm_lang$html$Html$h2,
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('intro-text text-center'),
-					_1: {ctor: '[]'}
-				},
-				{
-					ctor: '::',
-					_0: _elm_lang$html$Html$text('About'),
-					_1: {ctor: '[]'}
-				}),
-			_1: {
+		_0: _rundis$elm_bootstrap$Bootstrap_Grid$simpleRow(
+			{
 				ctor: '::',
 				_0: A2(
-					_elm_lang$html$Html$hr,
-					{ctor: '[]'},
-					{ctor: '[]'}),
-				_1: {
+					_rundis$elm_bootstrap$Bootstrap_Grid$col,
+					{
+						ctor: '::',
+						_0: _rundis$elm_bootstrap$Bootstrap_Grid_Col$lg12,
+						_1: {
+							ctor: '::',
+							_0: _rundis$elm_bootstrap$Bootstrap_Grid_Col$attrs(
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('box text-center'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}
+					},
+					{
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$h1,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('intro-text text-center'),
+								_1: {ctor: '[]'}
+							},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text('ABOUT US'),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$hr,
+								{ctor: '[]'},
+								{ctor: '[]'}),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$div,
+									{ctor: '[]'},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('About us...'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}
+						}
+					}),
+				_1: {ctor: '[]'}
+			}),
+		_1: {
+			ctor: '::',
+			_0: _rundis$elm_bootstrap$Bootstrap_Grid$simpleRow(
+				{
 					ctor: '::',
 					_0: A2(
-						_elm_lang$html$Html$p,
-						{ctor: '[]'},
+						_rundis$elm_bootstrap$Bootstrap_Grid$col,
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html$text('About page text'),
-							_1: {ctor: '[]'}
+							_0: _rundis$elm_bootstrap$Bootstrap_Grid_Col$lg12,
+							_1: {
+								ctor: '::',
+								_0: _rundis$elm_bootstrap$Bootstrap_Grid_Col$attrs(
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('box text-center'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}
+						},
+						{
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$hr,
+								{ctor: '[]'},
+								{ctor: '[]'}),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$h2,
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('intro-text text-center'),
+										_1: {ctor: '[]'}
+									},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('MORE INFO'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$hr,
+										{ctor: '[]'},
+										{ctor: '[]'}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$div,
+											{ctor: '[]'},
+											{
+												ctor: '::',
+												_0: A2(
+													_elm_lang$html$Html$p,
+													{ctor: '[]'},
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html$text('Loads of about info...'),
+														_1: {ctor: '[]'}
+													}),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}
+								}
+							}
 						}),
 					_1: {ctor: '[]'}
-				}
-			}
+				}),
+			_1: {ctor: '[]'}
+		}
+	});
+var _user$project$Main$schedule = A2(
+	_elm_lang$html$Html$div,
+	{ctor: '[]'},
+	{
+		ctor: '::',
+		_0: _rundis$elm_bootstrap$Bootstrap_Grid$simpleRow(
+			{
+				ctor: '::',
+				_0: A2(
+					_rundis$elm_bootstrap$Bootstrap_Grid$col,
+					{
+						ctor: '::',
+						_0: _rundis$elm_bootstrap$Bootstrap_Grid_Col$lg12,
+						_1: {
+							ctor: '::',
+							_0: _rundis$elm_bootstrap$Bootstrap_Grid_Col$attrs(
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$class('box text-center'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}
+					},
+					{
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$h1,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('intro-text text-center'),
+								_1: {ctor: '[]'}
+							},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text('CLASS SCHEDULE'),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$hr,
+								{ctor: '[]'},
+								{ctor: '[]'}),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$div,
+									{ctor: '[]'},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('Schedule info...'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}
+						}
+					}),
+				_1: {ctor: '[]'}
+			}),
+		_1: {
+			ctor: '::',
+			_0: _rundis$elm_bootstrap$Bootstrap_Grid$simpleRow(
+				{
+					ctor: '::',
+					_0: A2(
+						_rundis$elm_bootstrap$Bootstrap_Grid$col,
+						{
+							ctor: '::',
+							_0: _rundis$elm_bootstrap$Bootstrap_Grid_Col$lg12,
+							_1: {
+								ctor: '::',
+								_0: _rundis$elm_bootstrap$Bootstrap_Grid_Col$attrs(
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('box text-center'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}
+						},
+						{
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$hr,
+								{ctor: '[]'},
+								{ctor: '[]'}),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$h2,
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('intro-text text-center'),
+										_1: {ctor: '[]'}
+									},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('CLASS INFO'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$hr,
+										{ctor: '[]'},
+										{ctor: '[]'}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$div,
+											{ctor: '[]'},
+											{
+												ctor: '::',
+												_0: A2(
+													_elm_lang$html$Html$p,
+													{ctor: '[]'},
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html$text('Loads of class info...'),
+														_1: {ctor: '[]'}
+													}),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}
+								}
+							}
+						}),
+					_1: {ctor: '[]'}
+				}),
+			_1: {ctor: '[]'}
 		}
 	});
 var _user$project$Main$home = A2(
@@ -14734,7 +14976,7 @@ var _user$project$Main$home = A2(
 							_0: _rundis$elm_bootstrap$Bootstrap_Grid_Col$attrs(
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$class('text-center'),
+									_0: _elm_lang$html$Html_Attributes$class('box text-center'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {ctor: '[]'}
@@ -14809,7 +15051,151 @@ var _user$project$Main$home = A2(
 					}),
 				_1: {ctor: '[]'}
 			}),
-		_1: {ctor: '[]'}
+		_1: {
+			ctor: '::',
+			_0: _rundis$elm_bootstrap$Bootstrap_Grid$simpleRow(
+				{
+					ctor: '::',
+					_0: A2(
+						_rundis$elm_bootstrap$Bootstrap_Grid$col,
+						{
+							ctor: '::',
+							_0: _rundis$elm_bootstrap$Bootstrap_Grid_Col$lg12,
+							_1: {
+								ctor: '::',
+								_0: _rundis$elm_bootstrap$Bootstrap_Grid_Col$attrs(
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('box text-center'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}
+						},
+						{
+							ctor: '::',
+							_0: A2(
+								_elm_lang$html$Html$hr,
+								{ctor: '[]'},
+								{ctor: '[]'}),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$h2,
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html_Attributes$class('intro-text text-center'),
+										_1: {ctor: '[]'}
+									},
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('BUILD A WEBSITE WORTH VISITING'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$hr,
+										{ctor: '[]'},
+										{ctor: '[]'}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$div,
+											{ctor: '[]'},
+											{
+												ctor: '::',
+												_0: A2(
+													_elm_lang$html$Html$p,
+													{ctor: '[]'},
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html$text('Loads of text...'),
+														_1: {ctor: '[]'}
+													}),
+												_1: {ctor: '[]'}
+											}),
+										_1: {ctor: '[]'}
+									}
+								}
+							}
+						}),
+					_1: {ctor: '[]'}
+				}),
+			_1: {
+				ctor: '::',
+				_0: _rundis$elm_bootstrap$Bootstrap_Grid$simpleRow(
+					{
+						ctor: '::',
+						_0: A2(
+							_rundis$elm_bootstrap$Bootstrap_Grid$col,
+							{
+								ctor: '::',
+								_0: _rundis$elm_bootstrap$Bootstrap_Grid_Col$lg12,
+								_1: {
+									ctor: '::',
+									_0: _rundis$elm_bootstrap$Bootstrap_Grid_Col$attrs(
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$class('box text-center'),
+											_1: {ctor: '[]'}
+										}),
+									_1: {ctor: '[]'}
+								}
+							},
+							{
+								ctor: '::',
+								_0: A2(
+									_elm_lang$html$Html$hr,
+									{ctor: '[]'},
+									{ctor: '[]'}),
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$h2,
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html_Attributes$class('intro-text text-center'),
+											_1: {ctor: '[]'}
+										},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text('BEAUTIFUL BOXES TO SHOWCASE YOUR CONTENT'),
+											_1: {ctor: '[]'}
+										}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$hr,
+											{ctor: '[]'},
+											{ctor: '[]'}),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_elm_lang$html$Html$div,
+												{ctor: '[]'},
+												{
+													ctor: '::',
+													_0: A2(
+														_elm_lang$html$Html$p,
+														{ctor: '[]'},
+														{
+															ctor: '::',
+															_0: _elm_lang$html$Html$text('Loads more text...'),
+															_1: {ctor: '[]'}
+														}),
+													_1: {ctor: '[]'}
+												}),
+											_1: {ctor: '[]'}
+										}
+									}
+								}
+							}),
+						_1: {ctor: '[]'}
+					}),
+				_1: {ctor: '[]'}
+			}
+		}
 	});
 var _user$project$Main$notFound = _rundis$elm_bootstrap$Bootstrap_Alert$danger(
 	{
@@ -14878,6 +15264,8 @@ var _user$project$Main$content = function (_p0) {
 			return _user$project$Main$schedule;
 		case 'AboutR':
 			return _user$project$Main$about;
+		case 'ContactR':
+			return _user$project$Main$contact;
 		default:
 			return _user$project$Main$notFound;
 	}
@@ -15054,7 +15442,18 @@ var _user$project$Main$navigation = function (model) {
 								_0: _elm_lang$html$Html$text('About'),
 								_1: {ctor: '[]'}
 							}),
-						_1: {ctor: '[]'}
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_rundis$elm_bootstrap$Bootstrap_Navbar$itemLink,
+								_user$project$Main$linkAttrs(_user$project$Routes$ContactR),
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text('Contact'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {ctor: '[]'}
+						}
 					}
 				}
 			},
@@ -15063,7 +15462,7 @@ var _user$project$Main$navigation = function (model) {
 };
 var _user$project$Main$view = function (model) {
 	return A2(
-		_rundis$elm_bootstrap$Bootstrap_Grid$container,
+		_elm_lang$html$Html$div,
 		{ctor: '[]'},
 		{
 			ctor: '::',
@@ -15074,12 +15473,8 @@ var _user$project$Main$view = function (model) {
 				_1: {
 					ctor: '::',
 					_0: A2(
-						_elm_lang$html$Html$div,
-						{
-							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$class('box'),
-							_1: {ctor: '[]'}
-						},
+						_rundis$elm_bootstrap$Bootstrap_Grid$container,
+						{ctor: '[]'},
 						{
 							ctor: '::',
 							_0: _user$project$Main$content(model),
