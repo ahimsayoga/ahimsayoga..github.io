@@ -15303,7 +15303,7 @@ var _user$project$Main$header = A2(
 						},
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html$text('Komatsu | Ishikawa, Japan'),
+							_0: _elm_lang$html$Html$text('Shivam Yoga Center - Ishikawa, Japan'),
 							_1: {ctor: '[]'}
 						}),
 					_1: {ctor: '[]'}
