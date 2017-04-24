@@ -77,8 +77,4 @@ $(document).ready(function() {
     return false;
   });
 
-  // Fixes navbar when reaches top
-  // ------------------------
-  //$.lockfixed("#nav",{offset: {top: 0}});
-
 });
