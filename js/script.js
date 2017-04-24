@@ -1,6 +1,6 @@
 /* ========================================================================
  * Site Javascript
- * 
+ *
  * ========================================================================
  * Copyright 2016 Bootbites.com (unless otherwise stated)
  * For license information see: http://bootbites.com/license
@@ -32,34 +32,34 @@ $(document).ready(function() {
   // Counting numbers
   // ------------------------
 
-  $('[data-toggle="counter-up"]').counterUp({
-    delay: 10,
-    time: 1000
-  });
+  // $('[data-toggle="counter-up"]').counterUp({
+  //   delay: 10,
+  //   time: 1000
+  // });
 
   // Tooltip & popovers
   // ------------------------
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
-  
+
   // Background image via data tag
   // ------------------------
   $('[data-block-bg-img]').each(function() {
     // @todo - invoke backstretch plugin if multiple images
     var $this = $(this),
       bgImg = $this.data('block-bg-img');
-      
+
       $this.css('backgroundImage','url('+ bgImg + ')').addClass('block-bg-img');
   });
-  
+
   // jQuery counterUp
   // ------------------------
-  if(jQuery().counterUp) {
-    $('[data-counter-up]').counterUp({
-      delay: 20,
-    });
-  }
-  
+  // if(jQuery().counterUp) {
+  //   $('[data-counter-up]').counterUp({
+  //     delay: 20,
+  //   });
+  // }
+
   //Scroll Top link
   // ------------------------
   $(window).scroll(function(){
@@ -69,7 +69,7 @@ $(document).ready(function() {
       $('.scrolltop').fadeOut();
     }
   });
- 
+
   $('.scrolltop, .navbar-brand').click(function(){
     $("html, body").animate({
       scrollTop: 0
@@ -78,7 +78,7 @@ $(document).ready(function() {
   });
 
   // Fixes navbar when reaches top
-  // ------------------------ 
-  $.lockfixed("#nav",{offset: {top: 0}});
- 
+  // ------------------------
+  //$.lockfixed("#nav",{offset: {top: 0}});
+
 });

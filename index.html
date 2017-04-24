@@ -533,14 +533,19 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js">
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js">
-    </script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js">
     </script> <!-- Custom Javascript -->
 
     <script src="js/script.js">
     </script>
-    <script src="plugins/jquery.lockfixed.min.js">
+    <!-- <script src="plugins/jquery.lockfixed.min.js">
+    </script> -->
+    <script type="text/javascript" src="js/sticky.js"></script>
+    <script type="text/javascript">
+      var nav=document.querySelectorAll('#nav')
+      Array.prototype.forEach.call(nav, function(nav) {
+        sticky(nav);
+      });
     </script>
     <script src="js/parallax.js">
     </script>
