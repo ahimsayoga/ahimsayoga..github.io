@@ -515,6 +515,9 @@ p{
     .block p {
         margin: 0;
     }
+    .about-text p {
+      margin: 0 0 10px 0;
+    }
     .hero-brand {
         margin-bottom: 35px;
     }
@@ -601,4 +604,10 @@ p{
         padding-left: 30px;
         padding-right: 30px;
     }
+}
+
+@media (max-width: 543px) { 
+  .team .miki-bio {
+    clear: both;
+  }
 }
