@@ -79,8 +79,8 @@ p a:hover {
 
 .scrolltop {
   position: fixed;
-  bottom: 100px;
-  right: 100px;
+  bottom: 30px;
+  right: 30px;
   width: 42px;
   height: 42px;
   border-radius: 50%;
