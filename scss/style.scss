@@ -459,6 +459,19 @@ p{
     .btn {
         margin-bottom: 25px;
     }
+    .cta {
+      background-color: inherit;
+      padding: inherit;
+      margin-left: 0;
+      padding-left: 0;
+      a {
+        color: white;
+        opacity: .75;
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
     .copyright-text {
     a {
       color: #fff;
@@ -473,6 +486,9 @@ p{
             opacity: .25;
             &:hover {
                 opacity: 1;
+            }
+            &:first-child {
+              margin-left: 0;
             }
         }
     }

@@ -406,6 +406,16 @@ p a:hover {
   .site-footer h2,
   .site-footer .btn {
     margin-bottom: 25px; }
+  .site-footer .cta {
+    background-color: inherit;
+    padding: inherit;
+    margin-left: 0;
+    padding-left: 0; }
+    .site-footer .cta a {
+      color: white;
+      opacity: .75; }
+      .site-footer .cta a:hover {
+        opacity: 1; }
   .site-footer .copyright-text a {
     color: #fff; }
     .site-footer .copyright-text a:hover {
@@ -415,6 +425,8 @@ p a:hover {
     opacity: .25; }
     .site-footer .social-nav a:hover {
       opacity: 1; }
+    .site-footer .social-nav a:first-child {
+      margin-left: 0; }
   .site-footer .bottom {
     margin-top: 65px;
     background-color: #0b1b32;
