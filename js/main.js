@@ -16438,7 +16438,7 @@ var _user$project$Main$schedule = A2(
 										{ctor: '[]'},
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html$text('See below the 2017 schedule, please check the correct location and'),
+											_0: _elm_lang$html$Html$text('See below the 2017 schedule, please check the correct location and '),
 											_1: {
 												ctor: '::',
 												_0: A2(
@@ -16455,7 +16455,7 @@ var _user$project$Main$schedule = A2(
 													}),
 												_1: {
 													ctor: '::',
-													_0: _elm_lang$html$Html$text('to book in advance to avoid dissapointment.'),
+													_0: _elm_lang$html$Html$text(' to book in advance to avoid dissapointment.'),
 													_1: {ctor: '[]'}
 												}
 											}
