@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      // Work around for making SPA play nicely with GH Pages.
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
     <meta charset="utf-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
@@ -16,7 +26,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
@@ -44,515 +54,19 @@
       Ahimsa Yoga - Shivam Yoga Center
     </title><!-- Bootstrap core CSS via MaxCDN -->
     <link href="https://cdn.rawgit.com/twbs/bootstrap/v4.0.0-alpha.2/dist/css/bootstrap.css" rel="stylesheet"><!-- Custom CSS -->
-    <link href="css/style.css" rel="stylesheet"><!-- Font Awesome (version: 4.5.0) -->
+    <link href="css/app.css" rel="stylesheet"><!-- Font Awesome (version: 4.5.0) -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><!-- Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900' rel='stylesheet' type='text/css'>
   </head>
   <body>
-    <!-- Page Content
+    <div id="elm-main"></div>
+
+    <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>
+
+
+    <!-- JavaScript
     ================================================== -->
-    <!-- @component: navbar -->
-    <!-- Hero -->
-
-    <section class="hero">
-      <div class="container text-xs-center">
-        <div class="row">
-          <div class="col-md-12">
-            <a class="hero-brand" href="index.html" title="Home"><img alt="Bell Logo" src="img/logo.png"></a>
-          </div>
-        </div>
-
-        <div class="col-md-10 col-md-push-1">
-          <h1>
-            Shivam Yoga Center
-          </h1>
-          <p class="location">Ishikawa, Japan</p>
-
-          <p class="tagline">
-            Join our traditional Shivam Yoga classes, proven to improve health on all levels of the body.
-          </p>
-          <a class="btn btn-full" href="#contact">Contact Us</a>
-        </div>
-      </div>
-    </section>
-    <!-- /Hero -->
-    <!-- Navbar -->
-
-    <nav class="navbar" id="nav">
-      <div class="container">
-        <a class="navbar-brand" href="index.html"><img alt="" src="img/logo-nav.png"></a> <button aria-expanded="false" class="navbar-toggler hidden-md-up pull-right collapsed" data-target="#navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span>&#9776;</button>
-        <div aria-expanded="false" class="navbar-toggleable-sm collapse" id="navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
-            </li>
-
-            <li class="nav-item active">
-              <a class="nav-link" href="#schedule">Schedule</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#team">Instructors</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
-
-        <nav class="nav social-nav pull-right hidden-sm-down">
-          <a href="http://facebook.com/ahimsayogajp"><i class="fa fa-facebook"></i></a> <a href="http://instagram.com/ahimsayogajp"><i class="fa fa-instagram"></i></a><a href="http://twitter.com/ahimsayogajp"><i class="fa fa-twitter"></i></a><a href="https://www.youtube.com/channel/UCihAjjXntS8Q-5a4wBIolgQ"><i class="fa fa-youtube"></i></a><a href="mailto:miki@ahimsayoga.jp"><i class="fa fa-envelope"></i></a>
-        </nav>
-      </div>
-    </nav>
-    <!-- /Navbar -->
-    <!-- @component: content -->
-    <!-- About -->
-
-    <section class="about" id="about">
-      <div class="container text-xs-center">
-        <h2>
-          About Shivam Yoga
-        </h2>
-
-        <div class="about-text">
-    			<p><strong>Shivam Yoga</strong> is a philosophical and therapeutic system combining psychology and science. This traditional methodology respects the original source of Yoga knowledge which began between 7 and 10 thousands years in the Dravidian Civilization.</p>
-          <p>The Shivam Yoga is grounded on two philosophic bases called Sankhya and Tantra philosophies.</p>
-          <p><strong>Shankhya</strong> explains about the existence of the life and Universe based on Universal laws, mainly Karma and Dharma laws.</p>
-          <p><strong>Tantra</strong> is a behavioural philosophy. Tantra means toll (Tra) of development (Tan). Tantra is also understood as an energetic philosophy because explain about the energetic physiology of the body and life. Sankhya and Tantra philosophies are a life expression of the Dravidian people.
-          <strong>This expression is not religious or devotional.</strong></p>
-		    </div>
-      </div>
-    </section>
-    <!-- /About -->
-
-    <!-- Features -->
-
-    <section class="features" id="features">
-      <div class="container">
-        <h2 class="text-sm-center">
-          Sadhana: our practice
-        </h2>
-
-        <div class="row">
-          <div class="feature-col col-lg-4 col-xs-12">
-            <div class="card card-block">
-              <div>
-                <div class="feature-icon">
-                  <span class="fa fa-volume-down"></span>
-                </div>
-              </div>
-
-              <div>
-                <h3>
-                  Dharana
-                </h3>
-
-                <p>
-                  The mental concentration state by which we aim to focus the mind,
-                  lowering the frequency of our thoughts.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-col col-lg-4 col-xs-12">
-            <div class="card card-block">
-              <div>
-                <div class="feature-icon">
-                  <span class="fa fa-exchange"></span>
-                </div>
-              </div>
-
-              <div>
-                <h3>
-                  Pujas
-                </h3>
-
-                <p>
-                  Pujas are realised through a transmission and a reception of energy.
-                  They are a spiritual but not devotional force.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-col col-lg-4 col-xs-12">
-            <div class="card card-block">
-              <div>
-                <div class="feature-icon">
-                  <span class="fa fa-user"></span>
-                </div>
-              </div>
-
-              <div>
-                <h3>
-                  Pranayamas
-                </h3>
-
-                <p>
-                  Breathing exercises providing a greater flow of pranic energy and health throughout all of the levels of our being.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="feature-col col-lg-4 col-xs-12">
-            <div class="card card-block">
-              <div>
-                <div class="feature-icon">
-                  <span class="fa fa-balance-scale"></span>
-                </div>
-              </div>
-
-              <div>
-                <h3>
-                  Asanas
-                </h3>
-
-                <p>
-                  Mostly having names of animals or natural elements, through Asana we perfect ourselves as spiritual beings.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-col col-lg-4 col-xs-12">
-            <div class="card card-block">
-              <div>
-                <div class="feature-icon">
-                  <span class="fa fa-battery-full"></span>
-                </div>
-              </div>
-
-              <div>
-                <h3>
-                  Bandhas
-                </h3>
-
-                <p>
-                  Energising exercises for the organs and glands, activating the chakras and awakening power and discipline.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-col col-lg-4 col-xs-12">
-            <div class="card card-block">
-              <div>
-                <div class="feature-icon">
-                  <span class="fa fa-sign-out"></span>
-                </div>
-              </div>
-
-              <div>
-                <h3>
-                  Kriyas
-                </h3>
-
-                <p>
-                  Detoxification and purification exercises for the physical, energetic, emotional, mental and spiritual bodies.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feature-col col-lg-4 col-xs-12">
-            <div class="card card-block">
-              <div>
-                <div class="feature-icon">
-                  <span class="fa fa-unlock-alt"></span>
-                </div>
-              </div>
-
-              <div>
-                <h3>
-                  Yoganidra
-                </h3>
-
-                <p>
-                  A process of relaxation and self-knowledge,
-                  calming the mind and the flux of the emotions.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feature-col col-lg-4 col-xs-12">
-            <div class="card card-block">
-              <div>
-                <div class="feature-icon">
-                  <span class="fa fa-heart"></span>
-                </div>
-              </div>
-
-              <div>
-                <h3>
-                  Mantras
-                </h3>
-
-                <p>
-                  Non devotional chanting of mantras to propitiate and enter
-                  into a state of joy and happiness.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feature-col col-lg-4 col-xs-12">
-            <div class="card card-block">
-              <div>
-                <div class="feature-icon">
-                  <span class="fa fa-hand-paper-o"></span>
-                </div>
-              </div>
-
-              <div>
-                <h3>
-                  Mudras
-                </h3>
-
-                <p>
-                  Mudras are gestures and energetic expressions made with the
-                  hands, arms and sometimes, the body.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="feature-col col-lg-4 col-xs-12">
-            <div class="card card-block">
-              <div>
-                <div class="feature-icon">
-                  <span class="fa fa-circle"></span>
-                </div>
-              </div>
-
-              <div>
-                <h3>
-                  Dhyana
-                </h3>
-
-                <p>
-                  In meditation we achieve total concentration of the mind,
-                  the state of mind after Dharana has taken place.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Features -->
-
-    <section class="schedule" id="schedule">
-      <div class="container text-xs-center">
-        <h2>
-          Schedule
-        </h2>
-
-        <div class="schedule-intro">
-          <p>
-            Classes start 24th May 2017 @ <a href="http://comingle.net/inn/kanazawa-tabine">Kanazawa 旅音(tabi-Ne) Guesthouse</a>.
-          </p>
-        </div>
-
-        <table class="table">
-          <thead class="thead-default">
-            <tr>
-              <th>M</th>
-              <th>T</th>
-              <th>W</th>
-              <th>T</th>
-              <th>F</th>
-              <th>Sa</th>
-              <th>Su</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>-</td>
-              <td>-</td>
-              <td>10am - 11am</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-              <td>-</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-    <!-- /About -->
-
-    <!-- Call to Action -->
-    <section class="cta">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-9 col-sm-12 text-lg-left text-xs-center">
-            <h2>
-              Book a class with us
-            </h2>
-
-            <p>
-              Contact us to find out more about our yoga practice and book your place in an upcoming class.
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-sm-12 text-lg-right text-xs-center">
-            <a class="btn btn-ghost" href="mailto:miki@ahimsayoga.jp">Book a class</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Call to Action -->
-
-    <!-- Team -->
-
-    <section class="team" id="team">
-      <div class="container">
-        <h2 class="text-xs-center">
-          Instructors
-        </h2>
-
-        <div class="row">
-          <div class="col-sm-3 col-xs-6 paul-bio">
-            <div class="card card-block">
-              <a href="#"><img alt="" class="team-img" src="img/paul-1.jpg">
-              <div class="card-title-wrap">
-                <span class="card-title">Paul Mc Crodden</span> <span class="card-text">Shivam Yoga Instructor</span>
-              </div>
-
-              <div class="team-over">
-                <h4 class="hidden-md-down">
-                  Connect with me
-                </h4>
-
-                <nav class="nav social-nav">
-                  <a href="http://twitter.com/mccrodp"><i class="fa fa-twitter"></i></a><a href="http://medium.com/@mccrodp"><i class="fa fa-medium"></i></a>
-                </nav>
-
-                <p>
-                  Paul has 5 years experience giving Shivam Yoga
-                  classes in many countries worldwide.
-                </p>
-              </div></a>
-            </div>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <div class="card card-block">
-              <img alt="" class="team-img" src="img/paul-2.jpg">
-            </div>
-          </div>
-
-          <div class="col-sm-3 col-xs-6 miki-bio">
-            <div class="card card-block">
-              <a href="#"><img alt="" class="team-img" src="img/miki-1.jpg">
-              <div class="card-title-wrap">
-                <span class="card-title">Miki Dono</span> <span class="card-text">Shivam Yoga Instructor</span>
-              </div>
-
-              <div class="team-over">
-                <h4 class="hidden-md-down">
-                  Connect with me
-                </h4>
-
-                <nav class="nav social-nav">
-                  <a href="tel:+817044408396"><i class="fa fa-phone"></i></a>
-                  <a href="mailto:miki@ahimsayoga.jp"><i class="fa fa-envelope"></i></a>
-                </nav>
-
-                <p>
-                  Miki trained in Dublin, Ireland and Kerala, India,
-                  completing qualification in Shivam Yoga Dublin.
-                </p>
-              </div></a>
-            </div>
-          </div>
-
-          <div class="col-sm-3 col-xs-6">
-            <div class="card card-block">
-              <img alt="" class="team-img" src="img/miki-2.jpg">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /Team -->
-    <!-- @component: footer -->
-
-    <footer class="site-footer" id="contact">
-      <div class="container">
-        <div class="row">
-          <div class="footer-col col-sm-12 col-lg-6 text-xs-center text-lg-left">
-            <h2>
-              Contact Us
-            </h2>
-            <div class="cta">
-              <a href="tel:+817044408396">
-                <i class="fa fa-phone"></i>
-                070-4440-8396
-              </a>
-            </div>
-            <div class="cta">
-              <a href="mailto:miki@ahimsayoga.jp">
-                <i class="fa fa-envelope"></i>
-                miki@ahimsayoga.jp
-              </a>
-            </div>
-            <nav class="nav social-nav footer-social-nav">
-              <a href="http://facebook.com/ahimsayogajp"><i class="fa fa-facebook"></i></a> <a href="http://instagram.com/ahimsayogajp"><i class="fa fa-instagram"></i></a><a href="http://twitter.com/ahimsayogajp"><i class="fa fa-twitter"></i></a><a href="https://www.youtube.com/channel/UCihAjjXntS8Q-5a4wBIolgQ"><i class="fa fa-youtube"></i></a></nav>
-          </div>
-
-          <div class="footer-col col-sm-12 col-lg-6 text-xs-center text-lg-left">
-            <p class="footer-text">
-              Anyone that practices Shivam Yoga seeks the improvement of conscious as a focus of daily living. This is found by observing oneself. We observe the way we express ourselves through our experiences so as to cultivate a renewed awareness of this world, Nature and the Universe.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-9 col-xs-12">
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a href="index.html#">Home<span class="sr-only">Toggle navigation</span></a>
-                </li>
-
-                <li class="list-inline-item">
-                  <a href="#about">About</a>
-                </li>
-
-                <li class="list-inline-item">
-                  <a href="#schedule">Schedule</a>
-                </li>
-
-                <li class="list-inline-item">
-                  <a href="#team">Instructors</a>
-                </li>
-
-                <li class="list-inline-item">
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="col-lg-3 col-xs-12 text-lg-right text-xs-center">
-              <p class="copyright-text">
-                © <a href="http://ahimsalife.jp">Ahimsa Life</a>, Japan
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a> <!-- JavaScript
-
-
-    ================================================== -->
-     <!-- jQuery (version: 2.1.4) via googleapis or path to local copy ie. plugins/jquery/jquery.min.js -->
+    <!-- jQuery (version: 2.1.4) via googleapis or path to local copy ie. plugins/jquery/jquery.min.js -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
     </script> <!-- Tether plugin, needed for tooltip plugin -->
@@ -568,17 +82,63 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js">
     </script> <!-- Custom Javascript -->
 
-    <script src="js/script.js">
-    </script>
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+    <script>require('js/initialize');</script>
+    <script src="js/script.js"></script>
     <script type="text/javascript" src="plugins/sticky.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
     <script type="text/javascript">
+      $(function () {
+
+      function initMap() {
+          var location = new google.maps.LatLng(36.555605, 136.668071);
+
+          var mapCanvas = document.getElementById('map');
+          var mapOptions = {
+              center: location,
+              zoom: 16,
+              panControl: false,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          }
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+
+          var markerImage = 'img/marker.png';
+
+          var marker = new google.maps.Marker({
+              position: location,
+              map: map,
+              icon: markerImage
+          });
+
+          var contentString = '<div class="info-window">' +
+                  '<h3>Ahimsa Center</h3>' +
+                  '<div class="info-content">' +
+                  '<p>Come join our Traditional Shivam Yoga classes in English and Japanese. If you have difficulty finding us, please call: 070-4440-8396. See you soon. Om Shiva!</p>' +
+                  '</div>' +
+                  '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString,
+              maxWidth: 400
+          });
+
+          marker.addListener('click', function () {
+              infowindow.open(map, marker);
+          });
+
+        }
+
+        google.maps.event.addDomListener(window, 'load', initMap);
+      });
+
       var nav=document.querySelectorAll('#nav')
       Array.prototype.forEach.call(nav, function(nav) {
         sticky(nav);
       });
     </script>
-    <script src="js/parallax.js">
-    </script>
+    <script src="js/parallax.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
