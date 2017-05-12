@@ -17011,7 +17011,7 @@ var _user$project$Main$schedule = A2(
 																					},
 																					{
 																						ctor: '::',
-																						_0: _elm_lang$html$Html$text('1-112 Kibogaoka'),
+																						_0: _elm_lang$html$Html$text('喜多笑天, 1-112 Kibogaoka'),
 																						_1: {ctor: '[]'}
 																					}),
 																				_1: {
@@ -17518,29 +17518,7 @@ var _user$project$Main$footer = A2(
 																				{ctor: '[]'}),
 																			_1: {ctor: '[]'}
 																		}),
-																	_1: {
-																		ctor: '::',
-																		_0: A2(
-																			_elm_lang$html$Html$a,
-																			{
-																				ctor: '::',
-																				_0: _elm_lang$html$Html_Attributes$href('https://www.youtube.com/channel/UCihAjjXntS8Q-5a4wBIolgQ'),
-																				_1: {ctor: '[]'}
-																			},
-																			{
-																				ctor: '::',
-																				_0: A2(
-																					_elm_lang$html$Html$i,
-																					{
-																						ctor: '::',
-																						_0: _elm_lang$html$Html_Attributes$class('fa fa-youtube'),
-																						_1: {ctor: '[]'}
-																					},
-																					{ctor: '[]'}),
-																				_1: {ctor: '[]'}
-																			}),
-																		_1: {ctor: '[]'}
-																	}
+																	_1: {ctor: '[]'}
 																}
 															}
 														}),
@@ -18183,7 +18161,7 @@ var _user$project$Main$navigation = function (model) {
 														_elm_lang$html$Html$a,
 														{
 															ctor: '::',
-															_0: _elm_lang$html$Html_Attributes$href('https://www.youtube.com/channel/UCihAjjXntS8Q-5a4wBIolgQ'),
+															_0: _elm_lang$html$Html_Attributes$href('mailto:miki@ahimsayoga.jp'),
 															_1: {ctor: '[]'}
 														},
 														{
@@ -18192,35 +18170,13 @@ var _user$project$Main$navigation = function (model) {
 																_elm_lang$html$Html$i,
 																{
 																	ctor: '::',
-																	_0: _elm_lang$html$Html_Attributes$class('fa fa-youtube'),
+																	_0: _elm_lang$html$Html_Attributes$class('fa fa-envelope'),
 																	_1: {ctor: '[]'}
 																},
 																{ctor: '[]'}),
 															_1: {ctor: '[]'}
 														}),
-													_1: {
-														ctor: '::',
-														_0: A2(
-															_elm_lang$html$Html$a,
-															{
-																ctor: '::',
-																_0: _elm_lang$html$Html_Attributes$href('mailto:miki@ahimsayoga.jp'),
-																_1: {ctor: '[]'}
-															},
-															{
-																ctor: '::',
-																_0: A2(
-																	_elm_lang$html$Html$i,
-																	{
-																		ctor: '::',
-																		_0: _elm_lang$html$Html_Attributes$class('fa fa-envelope'),
-																		_1: {ctor: '[]'}
-																	},
-																	{ctor: '[]'}),
-																_1: {ctor: '[]'}
-															}),
-														_1: {ctor: '[]'}
-													}
+													_1: {ctor: '[]'}
 												}
 											}
 										}
