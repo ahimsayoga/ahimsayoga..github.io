@@ -16654,7 +16654,7 @@ var _user$project$Main$schedule = A2(
 																		{ctor: '[]'},
 																		{
 																			ctor: '::',
-																			_0: _elm_lang$html$Html$text('7pm (60mins)'),
+																			_0: _elm_lang$html$Html$text('7pm - 60mins'),
 																			_1: {ctor: '[]'}
 																		}),
 																	_1: {
@@ -16674,7 +16674,7 @@ var _user$project$Main$schedule = A2(
 																				{ctor: '[]'},
 																				{
 																					ctor: '::',
-																					_0: _elm_lang$html$Html$text('7pm (60mins)'),
+																					_0: _elm_lang$html$Html$text('7pm - 60mins'),
 																					_1: {ctor: '[]'}
 																				}),
 																			_1: {
@@ -16799,7 +16799,7 @@ var _user$project$Main$schedule = A2(
 																				{ctor: '[]'},
 																				{
 																					ctor: '::',
-																					_0: _elm_lang$html$Html$text('10am (75mins)'),
+																					_0: _elm_lang$html$Html$text('10am - 75mins'),
 																					_1: {ctor: '[]'}
 																				}),
 																			_1: {
@@ -16964,7 +16964,7 @@ var _user$project$Main$schedule = A2(
 																								{ctor: '[]'},
 																								{
 																									ctor: '::',
-																									_0: _elm_lang$html$Html$text('8am  (60mins)'),
+																									_0: _elm_lang$html$Html$text('10am - 60mins'),
 																									_1: {ctor: '[]'}
 																								}),
 																							_1: {
@@ -17089,7 +17089,7 @@ var _user$project$Main$schedule = A2(
 																								{ctor: '[]'},
 																								{
 																									ctor: '::',
-																									_0: _elm_lang$html$Html$text('7pm  (60mins)'),
+																									_0: _elm_lang$html$Html$text('7pm - 60mins'),
 																									_1: {ctor: '[]'}
 																								}),
 																							_1: {
@@ -17169,7 +17169,7 @@ var _user$project$Main$schedule = A2(
 															}),
 														_1: {
 															ctor: '::',
-															_0: _elm_lang$html$Html$text('1,200円  (60mins), 1,500円  (75mins)'),
+															_0: _elm_lang$html$Html$text('60mins class - 1,200円, 75mins class - 1,500円'),
 															_1: {ctor: '[]'}
 														}
 													}),
@@ -17194,7 +17194,7 @@ var _user$project$Main$schedule = A2(
 																}),
 															_1: {
 																ctor: '::',
-																_0: _elm_lang$html$Html$text('4,000円 (4 classes) '),
+																_0: _elm_lang$html$Html$text('4 classes - 4,000円'),
 																_1: {ctor: '[]'}
 															}
 														}),
