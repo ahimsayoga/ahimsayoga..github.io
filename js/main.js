@@ -14719,7 +14719,7 @@ var _user$project$Main$contact = A2(
 													{ctor: '[]'}),
 												_1: {
 													ctor: '::',
-													_0: _elm_lang$html$Html$text('2 Chome−１−２４'),
+													_0: _elm_lang$html$Html$text('2 Chome−1-24'),
 													_1: {
 														ctor: '::',
 														_0: A2(
