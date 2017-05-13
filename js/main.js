@@ -16654,7 +16654,7 @@ var _user$project$Main$schedule = A2(
 																		{ctor: '[]'},
 																		{
 																			ctor: '::',
-																			_0: _elm_lang$html$Html$text('7pm - 8pm'),
+																			_0: _elm_lang$html$Html$text('7pm (60mins)'),
 																			_1: {ctor: '[]'}
 																		}),
 																	_1: {
@@ -16674,7 +16674,7 @@ var _user$project$Main$schedule = A2(
 																				{ctor: '[]'},
 																				{
 																					ctor: '::',
-																					_0: _elm_lang$html$Html$text('7pm - 8pm'),
+																					_0: _elm_lang$html$Html$text('7pm (60mins)'),
 																					_1: {ctor: '[]'}
 																				}),
 																			_1: {
@@ -16799,7 +16799,7 @@ var _user$project$Main$schedule = A2(
 																				{ctor: '[]'},
 																				{
 																					ctor: '::',
-																					_0: _elm_lang$html$Html$text('10am - 11am'),
+																					_0: _elm_lang$html$Html$text('10am (75mins)'),
 																					_1: {ctor: '[]'}
 																				}),
 																			_1: {
@@ -16964,7 +16964,7 @@ var _user$project$Main$schedule = A2(
 																								{ctor: '[]'},
 																								{
 																									ctor: '::',
-																									_0: _elm_lang$html$Html$text('8am - 9am'),
+																									_0: _elm_lang$html$Html$text('8am  (60mins)'),
 																									_1: {ctor: '[]'}
 																								}),
 																							_1: {
@@ -17089,7 +17089,7 @@ var _user$project$Main$schedule = A2(
 																								{ctor: '[]'},
 																								{
 																									ctor: '::',
-																									_0: _elm_lang$html$Html$text('7pm - 8pm'),
+																									_0: _elm_lang$html$Html$text('7pm  (60mins)'),
 																									_1: {ctor: '[]'}
 																								}),
 																							_1: {
@@ -17129,7 +17129,81 @@ var _user$project$Main$schedule = A2(
 											_1: {ctor: '[]'}
 										}
 									}),
-								_1: {ctor: '[]'}
+								_1: {
+									ctor: '::',
+									_0: A2(
+										_elm_lang$html$Html$h3,
+										{ctor: '[]'},
+										{
+											ctor: '::',
+											_0: _elm_lang$html$Html$text('Class Cost'),
+											_1: {ctor: '[]'}
+										}),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_elm_lang$html$Html$div,
+											{
+												ctor: '::',
+												_0: _elm_lang$html$Html_Attributes$class('class-cost'),
+												_1: {ctor: '[]'}
+											},
+											{
+												ctor: '::',
+												_0: A2(
+													_elm_lang$html$Html$p,
+													{
+														ctor: '::',
+														_0: _elm_lang$html$Html_Attributes$class('drop-in'),
+														_1: {ctor: '[]'}
+													},
+													{
+														ctor: '::',
+														_0: A2(
+															_elm_lang$html$Html$strong,
+															{ctor: '[]'},
+															{
+																ctor: '::',
+																_0: _elm_lang$html$Html$text('Drop-in: '),
+																_1: {ctor: '[]'}
+															}),
+														_1: {
+															ctor: '::',
+															_0: _elm_lang$html$Html$text('1,200円  (60mins), 1,500円  (75mins)'),
+															_1: {ctor: '[]'}
+														}
+													}),
+												_1: {
+													ctor: '::',
+													_0: A2(
+														_elm_lang$html$Html$p,
+														{
+															ctor: '::',
+															_0: _elm_lang$html$Html_Attributes$class('monthly'),
+															_1: {ctor: '[]'}
+														},
+														{
+															ctor: '::',
+															_0: A2(
+																_elm_lang$html$Html$strong,
+																{ctor: '[]'},
+																{
+																	ctor: '::',
+																	_0: _elm_lang$html$Html$text('Monthly: '),
+																	_1: {ctor: '[]'}
+																}),
+															_1: {
+																ctor: '::',
+																_0: _elm_lang$html$Html$text('4,000円 (4 classes) '),
+																_1: {ctor: '[]'}
+															}
+														}),
+													_1: {ctor: '[]'}
+												}
+											}),
+										_1: {ctor: '[]'}
+									}
+								}
 							}
 						}
 					}),
