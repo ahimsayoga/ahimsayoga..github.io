@@ -17898,52 +17898,73 @@ var _user$project$Main$content = function (_p0) {
 			return _user$project$Main$notFound;
 	}
 };
-var _user$project$Main$navigation = function (model) {
-	return A2(
+var _user$project$Main$socialMenu = _rundis$elm_bootstrap$Bootstrap_Navbar$customItem(
+	A2(
 		_elm_lang$html$Html$nav,
 		{
 			ctor: '::',
-			_0: _elm_lang$html$Html_Attributes$class('navbar'),
-			_1: {
-				ctor: '::',
-				_0: _elm_lang$html$Html_Attributes$id('nav'),
-				_1: {ctor: '[]'}
-			}
+			_0: _elm_lang$html$Html_Attributes$class('social-nav pull-right hidden-sm-down'),
+			_1: {ctor: '[]'}
 		},
 		{
 			ctor: '::',
 			_0: A2(
-				_elm_lang$html$Html$div,
+				_elm_lang$html$Html$a,
 				{
 					ctor: '::',
-					_0: _elm_lang$html$Html_Attributes$class('container'),
+					_0: _elm_lang$html$Html_Attributes$href('http://facebook.com/ahimsayogajp'),
 					_1: {ctor: '[]'}
 				},
 				{
 					ctor: '::',
 					_0: A2(
+						_elm_lang$html$Html$i,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$class('fa fa-facebook'),
+							_1: {ctor: '[]'}
+						},
+						{ctor: '[]'}),
+					_1: {ctor: '[]'}
+				}),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$a,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$href('http://instagram.com/ahimsayogajp'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$i,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('fa fa-instagram'),
+								_1: {ctor: '[]'}
+							},
+							{ctor: '[]'}),
+						_1: {ctor: '[]'}
+					}),
+				_1: {
+					ctor: '::',
+					_0: A2(
 						_elm_lang$html$Html$a,
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$class('navbar-brand'),
-							_1: {
-								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$href('/'),
-								_1: {ctor: '[]'}
-							}
+							_0: _elm_lang$html$Html_Attributes$href('http://twitter.com/ahimsayogajp'),
+							_1: {ctor: '[]'}
 						},
 						{
 							ctor: '::',
 							_0: A2(
-								_elm_lang$html$Html$img,
+								_elm_lang$html$Html$i,
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$alt(''),
-									_1: {
-										ctor: '::',
-										_0: _elm_lang$html$Html_Attributes$src('img/logo-nav.png'),
-										_1: {ctor: '[]'}
-									}
+									_0: _elm_lang$html$Html_Attributes$class('fa fa-twitter'),
+									_1: {ctor: '[]'}
 								},
 								{ctor: '[]'}),
 							_1: {ctor: '[]'}
@@ -17951,368 +17972,58 @@ var _user$project$Main$navigation = function (model) {
 					_1: {
 						ctor: '::',
 						_0: A2(
-							_elm_lang$html$Html$button,
+							_elm_lang$html$Html$a,
 							{
 								ctor: '::',
-								_0: A2(_elm_lang$html$Html_Attributes$attribute, 'aria-expanded', 'false'),
-								_1: {
-									ctor: '::',
-									_0: _elm_lang$html$Html_Attributes$class('navbar-toggler hidden-md-up pull-right collapsed'),
-									_1: {
-										ctor: '::',
-										_0: A2(_elm_lang$html$Html_Attributes$attribute, 'data-target', '#navbar-collapse'),
-										_1: {
-											ctor: '::',
-											_0: A2(_elm_lang$html$Html_Attributes$attribute, 'data-toggle', 'collapse'),
-											_1: {
-												ctor: '::',
-												_0: _elm_lang$html$Html_Attributes$type_('button'),
-												_1: {ctor: '[]'}
-											}
-										}
-									}
-								}
+								_0: _elm_lang$html$Html_Attributes$href('https://www.youtube.com/channel/UCihAjjXntS8Q-5a4wBIolgQ'),
+								_1: {ctor: '[]'}
 							},
 							{
 								ctor: '::',
 								_0: A2(
-									_elm_lang$html$Html$span,
+									_elm_lang$html$Html$i,
 									{
 										ctor: '::',
-										_0: _elm_lang$html$Html_Attributes$class('sr-only'),
+										_0: _elm_lang$html$Html_Attributes$class('fa fa-youtube'),
 										_1: {ctor: '[]'}
 									},
-									{
-										ctor: '::',
-										_0: _elm_lang$html$Html$text('Toggle navigation'),
-										_1: {ctor: '[]'}
-									}),
-								_1: {
-									ctor: '::',
-									_0: _elm_lang$html$Html$text('☰'),
-									_1: {ctor: '[]'}
-								}
+									{ctor: '[]'}),
+								_1: {ctor: '[]'}
 							}),
 						_1: {
 							ctor: '::',
 							_0: A2(
-								_elm_lang$html$Html$div,
+								_elm_lang$html$Html$a,
 								{
 									ctor: '::',
-									_0: A2(_elm_lang$html$Html_Attributes$attribute, 'aria-expanded', 'false'),
-									_1: {
-										ctor: '::',
-										_0: _elm_lang$html$Html_Attributes$class('navbar-toggleable-sm collapse'),
-										_1: {
-											ctor: '::',
-											_0: _elm_lang$html$Html_Attributes$id('navbar-collapse'),
-											_1: {ctor: '[]'}
-										}
-									}
+									_0: _elm_lang$html$Html_Attributes$href('mailto:miki@ahimsayoga.jp'),
+									_1: {ctor: '[]'}
 								},
 								{
 									ctor: '::',
 									_0: A2(
-										_elm_lang$html$Html$ul,
+										_elm_lang$html$Html$i,
 										{
 											ctor: '::',
-											_0: _elm_lang$html$Html_Attributes$class('nav navbar-nav'),
+											_0: _elm_lang$html$Html_Attributes$class('fa fa-envelope'),
 											_1: {ctor: '[]'}
 										},
-										{
-											ctor: '::',
-											_0: A2(
-												_elm_lang$html$Html$li,
-												{
-													ctor: '::',
-													_0: _elm_lang$html$Html_Attributes$class('nav-item'),
-													_1: {ctor: '[]'}
-												},
-												{
-													ctor: '::',
-													_0: A2(
-														_elm_lang$html$Html$a,
-														{
-															ctor: '::',
-															_0: _elm_lang$html$Html_Attributes$class('nav-link'),
-															_1: {
-																ctor: '::',
-																_0: _elm_lang$html$Html_Attributes$href('about'),
-																_1: {ctor: '[]'}
-															}
-														},
-														{
-															ctor: '::',
-															_0: _elm_lang$html$Html$text('About'),
-															_1: {
-																ctor: '::',
-																_0: A2(
-																	_elm_lang$html$Html$span,
-																	{
-																		ctor: '::',
-																		_0: _elm_lang$html$Html_Attributes$class('sr-only'),
-																		_1: {ctor: '[]'}
-																	},
-																	{
-																		ctor: '::',
-																		_0: _elm_lang$html$Html$text('(current)'),
-																		_1: {ctor: '[]'}
-																	}),
-																_1: {ctor: '[]'}
-															}
-														}),
-													_1: {ctor: '[]'}
-												}),
-											_1: {
-												ctor: '::',
-												_0: A2(
-													_elm_lang$html$Html$li,
-													{
-														ctor: '::',
-														_0: _elm_lang$html$Html_Attributes$class('nav-item active'),
-														_1: {ctor: '[]'}
-													},
-													{
-														ctor: '::',
-														_0: A2(
-															_elm_lang$html$Html$a,
-															{
-																ctor: '::',
-																_0: _elm_lang$html$Html_Attributes$class('nav-link'),
-																_1: {
-																	ctor: '::',
-																	_0: _elm_lang$html$Html_Attributes$href('schedule'),
-																	_1: {ctor: '[]'}
-																}
-															},
-															{
-																ctor: '::',
-																_0: _elm_lang$html$Html$text('Schedule'),
-																_1: {ctor: '[]'}
-															}),
-														_1: {ctor: '[]'}
-													}),
-												_1: {
-													ctor: '::',
-													_0: A2(
-														_elm_lang$html$Html$li,
-														{
-															ctor: '::',
-															_0: _elm_lang$html$Html_Attributes$class('nav-item'),
-															_1: {ctor: '[]'}
-														},
-														{
-															ctor: '::',
-															_0: A2(
-																_elm_lang$html$Html$a,
-																{
-																	ctor: '::',
-																	_0: _elm_lang$html$Html_Attributes$class('nav-link'),
-																	_1: {
-																		ctor: '::',
-																		_0: _elm_lang$html$Html_Attributes$href('instructors'),
-																		_1: {ctor: '[]'}
-																	}
-																},
-																{
-																	ctor: '::',
-																	_0: _elm_lang$html$Html$text('Instructors'),
-																	_1: {ctor: '[]'}
-																}),
-															_1: {ctor: '[]'}
-														}),
-													_1: {
-														ctor: '::',
-														_0: A2(
-															_elm_lang$html$Html$li,
-															{
-																ctor: '::',
-																_0: _elm_lang$html$Html_Attributes$class('nav-item'),
-																_1: {ctor: '[]'}
-															},
-															{
-																ctor: '::',
-																_0: A2(
-																	_elm_lang$html$Html$a,
-																	{
-																		ctor: '::',
-																		_0: _elm_lang$html$Html_Attributes$class('nav-link'),
-																		_1: {
-																			ctor: '::',
-																			_0: _elm_lang$html$Html_Attributes$href('contact'),
-																			_1: {ctor: '[]'}
-																		}
-																	},
-																	{
-																		ctor: '::',
-																		_0: _elm_lang$html$Html$text('Contact'),
-																		_1: {ctor: '[]'}
-																	}),
-																_1: {ctor: '[]'}
-															}),
-														_1: {ctor: '[]'}
-													}
-												}
-											}
-										}),
+										{ctor: '[]'}),
 									_1: {ctor: '[]'}
 								}),
-							_1: {
-								ctor: '::',
-								_0: A2(
-									_elm_lang$html$Html$nav,
-									{
-										ctor: '::',
-										_0: _elm_lang$html$Html_Attributes$class('nav social-nav pull-right hidden-sm-down'),
-										_1: {ctor: '[]'}
-									},
-									{
-										ctor: '::',
-										_0: A2(
-											_elm_lang$html$Html$a,
-											{
-												ctor: '::',
-												_0: _elm_lang$html$Html_Attributes$href('http://facebook.com/ahimsayogajp'),
-												_1: {ctor: '[]'}
-											},
-											{
-												ctor: '::',
-												_0: A2(
-													_elm_lang$html$Html$i,
-													{
-														ctor: '::',
-														_0: _elm_lang$html$Html_Attributes$class('fa fa-facebook'),
-														_1: {ctor: '[]'}
-													},
-													{ctor: '[]'}),
-												_1: {ctor: '[]'}
-											}),
-										_1: {
-											ctor: '::',
-											_0: A2(
-												_elm_lang$html$Html$a,
-												{
-													ctor: '::',
-													_0: _elm_lang$html$Html_Attributes$href('http://instagram.com/ahimsayogajp'),
-													_1: {ctor: '[]'}
-												},
-												{
-													ctor: '::',
-													_0: A2(
-														_elm_lang$html$Html$i,
-														{
-															ctor: '::',
-															_0: _elm_lang$html$Html_Attributes$class('fa fa-instagram'),
-															_1: {ctor: '[]'}
-														},
-														{ctor: '[]'}),
-													_1: {ctor: '[]'}
-												}),
-											_1: {
-												ctor: '::',
-												_0: A2(
-													_elm_lang$html$Html$a,
-													{
-														ctor: '::',
-														_0: _elm_lang$html$Html_Attributes$href('http://twitter.com/ahimsayogajp'),
-														_1: {ctor: '[]'}
-													},
-													{
-														ctor: '::',
-														_0: A2(
-															_elm_lang$html$Html$i,
-															{
-																ctor: '::',
-																_0: _elm_lang$html$Html_Attributes$class('fa fa-twitter'),
-																_1: {ctor: '[]'}
-															},
-															{ctor: '[]'}),
-														_1: {ctor: '[]'}
-													}),
-												_1: {
-													ctor: '::',
-													_0: A2(
-														_elm_lang$html$Html$a,
-														{
-															ctor: '::',
-															_0: _elm_lang$html$Html_Attributes$href('mailto:miki@ahimsayoga.jp'),
-															_1: {ctor: '[]'}
-														},
-														{
-															ctor: '::',
-															_0: A2(
-																_elm_lang$html$Html$i,
-																{
-																	ctor: '::',
-																	_0: _elm_lang$html$Html_Attributes$class('fa fa-envelope'),
-																	_1: {ctor: '[]'}
-																},
-																{ctor: '[]'}),
-															_1: {ctor: '[]'}
-														}),
-													_1: {ctor: '[]'}
-												}
-											}
-										}
-									}),
-								_1: {ctor: '[]'}
-							}
+							_1: {ctor: '[]'}
 						}
 					}
-				}),
-			_1: {ctor: '[]'}
-		});
-};
-var _user$project$Main$view = function (_p3) {
-	var _p4 = _p3;
-	var _p6 = _p4;
-	var _p5 = _p6.route;
-	if (_p5.ctor === 'HomeR') {
-		return A2(
-			_elm_lang$html$Html$div,
-			{ctor: '[]'},
-			{
-				ctor: '::',
-				_0: _user$project$Main$content(_p6),
-				_1: {
-					ctor: '::',
-					_0: _user$project$Main$navigation(_p6),
-					_1: {ctor: '[]'}
 				}
-			});
-	} else {
-		return A2(
-			_elm_lang$html$Html$div,
-			{ctor: '[]'},
-			{
-				ctor: '::',
-				_0: _user$project$Main$navigation(_p6),
-				_1: {
-					ctor: '::',
-					_0: A2(
-						_rundis$elm_bootstrap$Bootstrap_Grid$container,
-						{ctor: '[]'},
-						{
-							ctor: '::',
-							_0: _user$project$Main$content(_p6),
-							_1: {ctor: '[]'}
-						}),
-					_1: {
-						ctor: '::',
-						_0: _user$project$Main$footer,
-						_1: {ctor: '[]'}
-					}
-				}
-			});
-	}
-};
+			}
+		}));
 var _user$project$Main$handleRoute = F2(
-	function (route, _p7) {
-		var _p8 = _p7;
+	function (route, _p3) {
+		var _p4 = _p3;
 		var newModel = _elm_lang$core$Native_Utils.update(
-			_p8,
+			_p4,
 			{route: route});
-		var _p9 = route;
+		var _p5 = route;
 		return A2(
 			_elm_lang$core$Platform_Cmd_ops['!'],
 			newModel,
@@ -18320,17 +18031,17 @@ var _user$project$Main$handleRoute = F2(
 	});
 var _user$project$Main$update = F2(
 	function (msg, model) {
-		var _p10 = msg;
-		switch (_p10.ctor) {
+		var _p6 = msg;
+		switch (_p6.ctor) {
 			case 'RouteChanged':
-				return A2(_user$project$Main$handleRoute, _p10._0, model);
+				return A2(_user$project$Main$handleRoute, _p6._0, model);
 			case 'RouteTo':
 				return A2(
 					_elm_lang$core$Platform_Cmd_ops['!'],
 					model,
 					{
 						ctor: '::',
-						_0: _user$project$Routes$navigateTo(_p10._0),
+						_0: _user$project$Routes$navigateTo(_p6._0),
 						_1: {ctor: '[]'}
 					});
 			default:
@@ -18338,7 +18049,7 @@ var _user$project$Main$update = F2(
 					_elm_lang$core$Platform_Cmd_ops['!'],
 					_elm_lang$core$Native_Utils.update(
 						model,
-						{navbarState: _p10._0}),
+						{navbarState: _p6._0}),
 					{ctor: '[]'});
 		}
 	});
@@ -18350,18 +18061,18 @@ var _user$project$Main$NavbarMsg = function (a) {
 	return {ctor: 'NavbarMsg', _0: a};
 };
 var _user$project$Main$init = function (location) {
-	var _p11 = _rundis$elm_bootstrap$Bootstrap_Navbar$initialState(_user$project$Main$NavbarMsg);
-	var navbarState = _p11._0;
-	var navbarCmd = _p11._1;
+	var _p7 = _rundis$elm_bootstrap$Bootstrap_Navbar$initialState(_user$project$Main$NavbarMsg);
+	var navbarState = _p7._0;
+	var navbarCmd = _p7._1;
 	var initialModel = {
 		route: _user$project$Routes$parsePath(location),
 		navbarState: navbarState,
 		ready: false,
 		error: _elm_lang$core$Maybe$Nothing
 	};
-	var _p12 = A2(_user$project$Main$handleRoute, initialModel.route, initialModel);
-	var model = _p12._0;
-	var routeCmd = _p12._1;
+	var _p8 = A2(_user$project$Main$handleRoute, initialModel.route, initialModel);
+	var model = _p8._0;
+	var routeCmd = _p8._1;
 	return {
 		ctor: '_Tuple2',
 		_0: model,
@@ -18400,6 +18111,160 @@ var _user$project$Main$linkAttrs = function (route) {
 			_1: {ctor: '[]'}
 		}
 	};
+};
+var _user$project$Main$navigation = function (model) {
+	return A2(
+		_rundis$elm_bootstrap$Bootstrap_Navbar$view,
+		model.navbarState,
+		A2(
+			_rundis$elm_bootstrap$Bootstrap_Navbar$customItems,
+			{
+				ctor: '::',
+				_0: _user$project$Main$socialMenu,
+				_1: {ctor: '[]'}
+			},
+			A2(
+				_rundis$elm_bootstrap$Bootstrap_Navbar$items,
+				{
+					ctor: '::',
+					_0: A2(
+						_rundis$elm_bootstrap$Bootstrap_Navbar$itemLink,
+						_user$project$Main$linkAttrs(_user$project$Routes$HomeR),
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html$text('Home'),
+							_1: {ctor: '[]'}
+						}),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_rundis$elm_bootstrap$Bootstrap_Navbar$itemLink,
+							_user$project$Main$linkAttrs(_user$project$Routes$ScheduleR),
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html$text('Schedule'),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_rundis$elm_bootstrap$Bootstrap_Navbar$itemLink,
+								_user$project$Main$linkAttrs(_user$project$Routes$AboutR),
+								{
+									ctor: '::',
+									_0: _elm_lang$html$Html$text('About'),
+									_1: {ctor: '[]'}
+								}),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_rundis$elm_bootstrap$Bootstrap_Navbar$itemLink,
+									_user$project$Main$linkAttrs(_user$project$Routes$ContactR),
+									{
+										ctor: '::',
+										_0: _elm_lang$html$Html$text('Contact'),
+										_1: {ctor: '[]'}
+									}),
+								_1: {ctor: '[]'}
+							}
+						}
+					}
+				},
+				A3(
+					_rundis$elm_bootstrap$Bootstrap_Navbar$brand,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$href('/'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$img,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$alt(''),
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$src('img/logo-nav.png'),
+									_1: {ctor: '[]'}
+								}
+							},
+							{ctor: '[]'}),
+						_1: {ctor: '[]'}
+					},
+					_rundis$elm_bootstrap$Bootstrap_Navbar$container(
+						_rundis$elm_bootstrap$Bootstrap_Navbar$collapseSmall(
+							_rundis$elm_bootstrap$Bootstrap_Navbar$withAnimation(
+								A2(
+									_rundis$elm_bootstrap$Bootstrap_Navbar$lightCustomClass,
+									'navbar-inverse',
+									_rundis$elm_bootstrap$Bootstrap_Navbar$config(_user$project$Main$NavbarMsg)))))))));
+};
+var _user$project$Main$view = function (_p9) {
+	var _p10 = _p9;
+	var _p12 = _p10;
+	var _p11 = _p12.route;
+	if (_p11.ctor === 'HomeR') {
+		return A2(
+			_elm_lang$html$Html$div,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: _user$project$Main$content(_p12),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_elm_lang$html$Html$div,
+						{
+							ctor: '::',
+							_0: _elm_lang$html$Html_Attributes$class('nav-wrapper'),
+							_1: {ctor: '[]'}
+						},
+						{
+							ctor: '::',
+							_0: _user$project$Main$navigation(_p12),
+							_1: {ctor: '[]'}
+						}),
+					_1: {ctor: '[]'}
+				}
+			});
+	} else {
+		return A2(
+			_elm_lang$html$Html$div,
+			{ctor: '[]'},
+			{
+				ctor: '::',
+				_0: A2(
+					_elm_lang$html$Html$div,
+					{
+						ctor: '::',
+						_0: _elm_lang$html$Html_Attributes$class('nav-wrapper'),
+						_1: {ctor: '[]'}
+					},
+					{
+						ctor: '::',
+						_0: _user$project$Main$navigation(_p12),
+						_1: {ctor: '[]'}
+					}),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_rundis$elm_bootstrap$Bootstrap_Grid$container,
+						{ctor: '[]'},
+						{
+							ctor: '::',
+							_0: _user$project$Main$content(_p12),
+							_1: {ctor: '[]'}
+						}),
+					_1: {
+						ctor: '::',
+						_0: _user$project$Main$footer,
+						_1: {ctor: '[]'}
+					}
+				}
+			});
+	}
 };
 var _user$project$Main$RouteChanged = function (a) {
 	return {ctor: 'RouteChanged', _0: a};
