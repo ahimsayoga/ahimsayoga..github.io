@@ -18129,10 +18129,10 @@ var _user$project$Main$navigation = function (model) {
 					ctor: '::',
 					_0: A2(
 						_rundis$elm_bootstrap$Bootstrap_Navbar$itemLink,
-						_user$project$Main$linkAttrs(_user$project$Routes$HomeR),
+						_user$project$Main$linkAttrs(_user$project$Routes$AboutR),
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html$text('Home'),
+							_0: _elm_lang$html$Html$text('About'),
 							_1: {ctor: '[]'}
 						}),
 					_1: {
@@ -18149,10 +18149,10 @@ var _user$project$Main$navigation = function (model) {
 							ctor: '::',
 							_0: A2(
 								_rundis$elm_bootstrap$Bootstrap_Navbar$itemLink,
-								_user$project$Main$linkAttrs(_user$project$Routes$AboutR),
+								_user$project$Main$linkAttrs(_user$project$Routes$InstructorsR),
 								{
 									ctor: '::',
-									_0: _elm_lang$html$Html$text('About'),
+									_0: _elm_lang$html$Html$text('Instructors'),
 									_1: {ctor: '[]'}
 								}),
 							_1: {
