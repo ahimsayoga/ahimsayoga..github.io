@@ -261,6 +261,8 @@ p a:hover {
   padding-bottom: 45px; }
   .features h2 {
     color: #bc0b66; }
+  .features div.card {
+    display: block; }
 
 .feature-col {
   display: table;

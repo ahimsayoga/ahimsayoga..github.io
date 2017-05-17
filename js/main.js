@@ -14683,7 +14683,7 @@ var _user$project$Main$contact = A2(
 							_elm_lang$html$Html$h2,
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$class('text-xs-center'),
+								_0: _elm_lang$html$Html_Attributes$class('text-center'),
 								_1: {ctor: '[]'}
 							},
 							{
@@ -14900,7 +14900,7 @@ var _user$project$Main$instructors = A2(
 							_elm_lang$html$Html$h2,
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$class('text-xs-center'),
+								_0: _elm_lang$html$Html_Attributes$class('text-center'),
 								_1: {ctor: '[]'}
 							},
 							{
@@ -15406,7 +15406,11 @@ var _user$project$Main$about = A2(
 						ctor: '::',
 						_0: A2(
 							_elm_lang$html$Html$h2,
-							{ctor: '[]'},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('text-center'),
+								_1: {ctor: '[]'}
+							},
 							{
 								ctor: '::',
 								_0: _elm_lang$html$Html$text('About Shivam Yoga'),
@@ -16416,7 +16420,11 @@ var _user$project$Main$schedule = A2(
 						ctor: '::',
 						_0: A2(
 							_elm_lang$html$Html$h2,
-							{ctor: '[]'},
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('text-center'),
+								_1: {ctor: '[]'}
+							},
 							{
 								ctor: '::',
 								_0: _elm_lang$html$Html$text('Class Schedule'),
@@ -17314,7 +17322,7 @@ var _user$project$Main$home = A2(
 												_elm_lang$html$Html$div,
 												{
 													ctor: '::',
-													_0: _elm_lang$html$Html_Attributes$class('col-md-10 col-md-push-1'),
+													_0: _elm_lang$html$Html_Attributes$class('container justify-content-center'),
 													_1: {ctor: '[]'}
 												},
 												{
@@ -18205,65 +18213,113 @@ var _user$project$Main$view = function (_p9) {
 	var _p10 = _p9;
 	var _p12 = _p10;
 	var _p11 = _p12.route;
-	if (_p11.ctor === 'HomeR') {
-		return A2(
-			_elm_lang$html$Html$div,
-			{ctor: '[]'},
-			{
-				ctor: '::',
-				_0: _user$project$Main$content(_p12),
-				_1: {
+	switch (_p11.ctor) {
+		case 'HomeR':
+			return A2(
+				_elm_lang$html$Html$div,
+				{ctor: '[]'},
+				{
+					ctor: '::',
+					_0: _user$project$Main$content(_p12),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_elm_lang$html$Html$div,
+							{
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$class('nav-wrapper'),
+								_1: {
+									ctor: '::',
+									_0: _elm_lang$html$Html_Attributes$id('nav'),
+									_1: {ctor: '[]'}
+								}
+							},
+							{
+								ctor: '::',
+								_0: _user$project$Main$navigation(_p12),
+								_1: {ctor: '[]'}
+							}),
+						_1: {ctor: '[]'}
+					}
+				});
+		case 'ContactR':
+			return A2(
+				_elm_lang$html$Html$div,
+				{ctor: '[]'},
+				{
 					ctor: '::',
 					_0: A2(
 						_elm_lang$html$Html$div,
 						{
 							ctor: '::',
 							_0: _elm_lang$html$Html_Attributes$class('nav-wrapper'),
-							_1: {ctor: '[]'}
+							_1: {
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$id('nav'),
+								_1: {ctor: '[]'}
+							}
 						},
 						{
 							ctor: '::',
 							_0: _user$project$Main$navigation(_p12),
 							_1: {ctor: '[]'}
 						}),
-					_1: {ctor: '[]'}
-				}
-			});
-	} else {
-		return A2(
-			_elm_lang$html$Html$div,
-			{ctor: '[]'},
-			{
-				ctor: '::',
-				_0: A2(
-					_elm_lang$html$Html$div,
-					{
+					_1: {
 						ctor: '::',
-						_0: _elm_lang$html$Html_Attributes$class('nav-wrapper'),
-						_1: {ctor: '[]'}
-					},
-					{
-						ctor: '::',
-						_0: _user$project$Main$navigation(_p12),
-						_1: {ctor: '[]'}
-					}),
-				_1: {
+						_0: A2(
+							_rundis$elm_bootstrap$Bootstrap_Grid$container,
+							{ctor: '[]'},
+							{
+								ctor: '::',
+								_0: _user$project$Main$content(_p12),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: _user$project$Main$footer,
+							_1: {ctor: '[]'}
+						}
+					}
+				});
+		default:
+			return A2(
+				_elm_lang$html$Html$div,
+				{ctor: '[]'},
+				{
 					ctor: '::',
 					_0: A2(
-						_rundis$elm_bootstrap$Bootstrap_Grid$container,
-						{ctor: '[]'},
+						_elm_lang$html$Html$div,
 						{
 							ctor: '::',
-							_0: _user$project$Main$content(_p12),
+							_0: _elm_lang$html$Html_Attributes$class('nav-wrapper'),
+							_1: {
+								ctor: '::',
+								_0: _elm_lang$html$Html_Attributes$id('nav'),
+								_1: {ctor: '[]'}
+							}
+						},
+						{
+							ctor: '::',
+							_0: _user$project$Main$navigation(_p12),
 							_1: {ctor: '[]'}
 						}),
 					_1: {
 						ctor: '::',
-						_0: _user$project$Main$footer,
-						_1: {ctor: '[]'}
+						_0: A2(
+							_rundis$elm_bootstrap$Bootstrap_Grid$container,
+							{ctor: '[]'},
+							{
+								ctor: '::',
+								_0: _user$project$Main$content(_p12),
+								_1: {ctor: '[]'}
+							}),
+						_1: {
+							ctor: '::',
+							_0: _user$project$Main$footer,
+							_1: {ctor: '[]'}
+						}
 					}
-				}
-			});
+				});
 	}
 };
 var _user$project$Main$RouteChanged = function (a) {
