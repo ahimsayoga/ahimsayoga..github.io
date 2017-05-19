@@ -16463,7 +16463,7 @@ var _user$project$Main$schedule = A2(
 													}),
 												_1: {
 													ctor: '::',
-													_0: _elm_lang$html$Html$text(' to book in advance to avoid dissapointment.'),
+													_0: _elm_lang$html$Html$text(' and book at least 1 day in advance to avoid dissapointment.'),
 													_1: {ctor: '[]'}
 												}
 											}
