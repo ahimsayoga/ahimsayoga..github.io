@@ -17097,7 +17097,7 @@ var _user$project$Main$schedule = A2(
 																								{ctor: '[]'},
 																								{
 																									ctor: '::',
-																									_0: _elm_lang$html$Html$text('2pm & 7pm - 60mins'),
+																									_0: _elm_lang$html$Html$text('1:30pm & 7pm - 60mins'),
 																									_1: {ctor: '[]'}
 																								}),
 																							_1: {
