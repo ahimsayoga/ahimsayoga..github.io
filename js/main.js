@@ -18227,7 +18227,7 @@ var _user$project$Main$view = function (_p9) {
 							_elm_lang$html$Html$div,
 							{
 								ctor: '::',
-								_0: _elm_lang$html$Html_Attributes$class('nav-wrapper'),
+								_0: _elm_lang$html$Html_Attributes$class('nav-wrapper nav'),
 								_1: {
 									ctor: '::',
 									_0: _elm_lang$html$Html_Attributes$id('nav'),
@@ -18252,7 +18252,7 @@ var _user$project$Main$view = function (_p9) {
 						_elm_lang$html$Html$div,
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$class('nav-wrapper'),
+							_0: _elm_lang$html$Html_Attributes$class('nav-wrapper nav'),
 							_1: {
 								ctor: '::',
 								_0: _elm_lang$html$Html_Attributes$id('nav'),
@@ -18291,7 +18291,7 @@ var _user$project$Main$view = function (_p9) {
 						_elm_lang$html$Html$div,
 						{
 							ctor: '::',
-							_0: _elm_lang$html$Html_Attributes$class('nav-wrapper'),
+							_0: _elm_lang$html$Html_Attributes$class('nav-wrapper nav'),
 							_1: {
 								ctor: '::',
 								_0: _elm_lang$html$Html_Attributes$id('nav'),

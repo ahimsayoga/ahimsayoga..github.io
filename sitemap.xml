@@ -6,23 +6,23 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://ahimsayoga.jp/about/</loc>
-    <changefreq>weekly</changefreq>
+    <loc>http://ahimsayoga.jp/?p=/about/</loc>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://ahimsayoga.jp/schedule/</loc>
-    <changefreq>weekly</changefreq>
+    <loc>http://ahimsayoga.jp/?p=/schedule/</loc>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://ahimsayoga.jp/instructors/</loc>
-    <changefreq>weekly</changefreq>
+    <loc>http://ahimsayoga.jp/?p=/instructors/</loc>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://ahimsayoga.jp/contact/</loc>
-    <changefreq>weekly</changefreq>
+    <loc>http://ahimsayoga.jp/?p=/contact/</loc>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
 </urlset>
