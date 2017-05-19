@@ -17019,7 +17019,7 @@ var _user$project$Main$schedule = A2(
 																					},
 																					{
 																						ctor: '::',
-																						_0: _elm_lang$html$Html$text('喜多笑天, 1-112 Kibogaoka'),
+																						_0: _elm_lang$html$Html$text('整体 喜多笑天, 1-113 Kibogaoka'),
 																						_1: {ctor: '[]'}
 																					}),
 																				_1: {
