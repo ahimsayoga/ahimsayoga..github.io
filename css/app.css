@@ -39,10 +39,12 @@ th, td {
   font-size: 30px;
   color: #fff; }
 
-.social-nav a {
-  font-size: 24px;
-  margin-left: 15px;
-  color: #fff; }
+.social-nav {
+  min-width: 177px; }
+  .social-nav a {
+    font-size: 24px;
+    margin-left: 15px;
+    color: #fff; }
 
 .nav-wrapper {
   background-color: #bc0b66;
@@ -57,7 +59,8 @@ th, td {
 .navbar .navbar-nav .nav-link, .navbar .navbar-brand, .nav {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 400;
-  color: #fff; }
+  color: #fff;
+  width: 100%; }
 
 .navbar-inverse .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(250,250,250, 1)' stroke-width='3' stroke-linecap='normal' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
@@ -66,7 +69,8 @@ th, td {
   border: none; }
 
 div .navbar .navbar-toggler-right {
-  font-size: 25px; }
+  font-size: 25px;
+  right: 0; }
 
 /* ==================================================
   Elements
@@ -574,6 +578,10 @@ abbr i {
   .block {
     padding-left: 30px;
     padding-right: 30px; } }
+
+@media (max-width: 575px) {
+  .navbar {
+    width: 100%; } }
 
 @media (max-width: 543px) {
   .team .miki-bio {
