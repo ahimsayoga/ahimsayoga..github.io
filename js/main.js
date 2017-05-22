@@ -15494,7 +15494,7 @@ var _user$project$Main$about = A2(
 															}),
 														_1: {
 															ctor: '::',
-															_0: _elm_lang$html$Html$text(' is a behavioural philosophy. Tantra means toll (Tra) of development (Tan). Tantra is also understood as an energetic philosophy because explain about the energetic physiology of the body and life. Sankhya and Tantra philosophies are a life expression of the Dravidian people.'),
+															_0: _elm_lang$html$Html$text(' is a behavioural philosophy. Tantra means tool (Tra) of development (Tan). Tantra is also understood as an energetic philosophy because explain about the energetic physiology of the body and life. Sankhya and Tantra philosophies are a life expression of the Dravidian people.'),
 															_1: {
 																ctor: '::',
 																_0: A2(
