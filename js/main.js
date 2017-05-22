@@ -16744,17 +16744,17 @@ var _user$project$Main$schedule = A2(
 																			_elm_lang$html$Html$a,
 																			{
 																				ctor: '::',
-																				_0: _elm_lang$html$Html_Attributes$href('http://comingle.net/inn/kanazawa-tabine'),
+																				_0: _elm_lang$html$Html_Attributes$href('http://takigaharafarm.com'),
 																				_1: {ctor: '[]'}
 																			},
 																			{
 																				ctor: '::',
-																				_0: _elm_lang$html$Html$text('旅音(tabi-Ne) Guesthouse'),
+																				_0: _elm_lang$html$Html$text('Takigahara Farm'),
 																				_1: {ctor: '[]'}
 																			}),
 																		_1: {
 																			ctor: '::',
-																			_0: _elm_lang$html$Html$text(', Kanazawa'),
+																			_0: _elm_lang$html$Html$text(', Komatsu'),
 																			_1: {
 																				ctor: '::',
 																				_0: A2(
@@ -16772,7 +16772,7 @@ var _user$project$Main$schedule = A2(
 																						},
 																						{
 																							ctor: '::',
-																							_0: _elm_lang$html$Html$text('Starting 31st May'),
+																							_0: _elm_lang$html$Html$text('Starting 2nd June'),
 																							_1: {ctor: '[]'}
 																						}),
 																					_1: {ctor: '[]'}
@@ -16807,7 +16807,7 @@ var _user$project$Main$schedule = A2(
 																				{ctor: '[]'},
 																				{
 																					ctor: '::',
-																					_0: _elm_lang$html$Html$text('10:30am - 75mins'),
+																					_0: _elm_lang$html$Html$text('-'),
 																					_1: {ctor: '[]'}
 																				}),
 																			_1: {
@@ -16827,7 +16827,7 @@ var _user$project$Main$schedule = A2(
 																						{ctor: '[]'},
 																						{
 																							ctor: '::',
-																							_0: _elm_lang$html$Html$text('-'),
+																							_0: _elm_lang$html$Html$text('10am - 75mins'),
 																							_1: {ctor: '[]'}
 																						}),
 																					_1: {
@@ -16879,12 +16879,12 @@ var _user$project$Main$schedule = A2(
 																				_elm_lang$html$Html$a,
 																				{
 																					ctor: '::',
-																					_0: _elm_lang$html$Html_Attributes$href('http://takigaharafarm.com'),
+																					_0: _elm_lang$html$Html_Attributes$href('https://www.google.ie/maps/place/1-112+Kib%C5%8Dgaoka,+Komatsu-shi,+Ishikawa-ken+923-0826,+Japan/@36.3974177,136.4965842,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x5ff85014c2398f95:0x541113e9b0c30afe!2sKibogaoka,+Komatsu,+Ishikawa+Prefecture+923-0826,+Japan!3b1!8m2!3d36.3985343!4d136.4975591!3m4!1s0x5ff8506b510285b5:0xd2e2361d1dfd949c!8m2!3d36.3974177!4d136.4971314'),
 																					_1: {ctor: '[]'}
 																				},
 																				{
 																					ctor: '::',
-																					_0: _elm_lang$html$Html$text('Takigahara Farm'),
+																					_0: _elm_lang$html$Html$text('整体 喜多笑天, 1-113 Kibogaoka'),
 																					_1: {ctor: '[]'}
 																				}),
 																			_1: {
@@ -16962,7 +16962,7 @@ var _user$project$Main$schedule = A2(
 																							{ctor: '[]'},
 																							{
 																								ctor: '::',
-																								_0: _elm_lang$html$Html$text('10am - 75mins'),
+																								_0: _elm_lang$html$Html$text('1:30pm & 7pm - 60mins'),
 																								_1: {ctor: '[]'}
 																							}),
 																						_1: {
@@ -16994,143 +16994,7 @@ var _user$project$Main$schedule = A2(
 																		}
 																	}
 																}),
-															_1: {
-																ctor: '::',
-																_0: A2(
-																	_elm_lang$html$Html$tr,
-																	{ctor: '[]'},
-																	{
-																		ctor: '::',
-																		_0: A2(
-																			_elm_lang$html$Html$th,
-																			{
-																				ctor: '::',
-																				_0: _elm_lang$html$Html_Attributes$scope('row'),
-																				_1: {ctor: '[]'}
-																			},
-																			{
-																				ctor: '::',
-																				_0: A2(
-																					_elm_lang$html$Html$a,
-																					{
-																						ctor: '::',
-																						_0: _elm_lang$html$Html_Attributes$href('https://www.google.ie/maps/place/1-112+Kib%C5%8Dgaoka,+Komatsu-shi,+Ishikawa-ken+923-0826,+Japan/@36.3974177,136.4965842,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x5ff85014c2398f95:0x541113e9b0c30afe!2sKibogaoka,+Komatsu,+Ishikawa+Prefecture+923-0826,+Japan!3b1!8m2!3d36.3985343!4d136.4975591!3m4!1s0x5ff8506b510285b5:0xd2e2361d1dfd949c!8m2!3d36.3974177!4d136.4971314'),
-																						_1: {ctor: '[]'}
-																					},
-																					{
-																						ctor: '::',
-																						_0: _elm_lang$html$Html$text('整体 喜多笑天, 1-113 Kibogaoka'),
-																						_1: {ctor: '[]'}
-																					}),
-																				_1: {
-																					ctor: '::',
-																					_0: _elm_lang$html$Html$text(', Komatsu'),
-																					_1: {
-																						ctor: '::',
-																						_0: A2(
-																							_elm_lang$html$Html$br,
-																							{ctor: '[]'},
-																							{ctor: '[]'}),
-																						_1: {
-																							ctor: '::',
-																							_0: A2(
-																								_elm_lang$html$Html$span,
-																								{
-																									ctor: '::',
-																									_0: _elm_lang$html$Html_Attributes$class('start-time'),
-																									_1: {ctor: '[]'}
-																								},
-																								{
-																									ctor: '::',
-																									_0: _elm_lang$html$Html$text('Starting 2nd June'),
-																									_1: {ctor: '[]'}
-																								}),
-																							_1: {ctor: '[]'}
-																						}
-																					}
-																				}
-																			}),
-																		_1: {
-																			ctor: '::',
-																			_0: A2(
-																				_elm_lang$html$Html$td,
-																				{ctor: '[]'},
-																				{
-																					ctor: '::',
-																					_0: _elm_lang$html$Html$text('-'),
-																					_1: {ctor: '[]'}
-																				}),
-																			_1: {
-																				ctor: '::',
-																				_0: A2(
-																					_elm_lang$html$Html$td,
-																					{ctor: '[]'},
-																					{
-																						ctor: '::',
-																						_0: _elm_lang$html$Html$text('-'),
-																						_1: {ctor: '[]'}
-																					}),
-																				_1: {
-																					ctor: '::',
-																					_0: A2(
-																						_elm_lang$html$Html$td,
-																						{ctor: '[]'},
-																						{
-																							ctor: '::',
-																							_0: _elm_lang$html$Html$text('-'),
-																							_1: {ctor: '[]'}
-																						}),
-																					_1: {
-																						ctor: '::',
-																						_0: A2(
-																							_elm_lang$html$Html$td,
-																							{ctor: '[]'},
-																							{
-																								ctor: '::',
-																								_0: _elm_lang$html$Html$text('-'),
-																								_1: {ctor: '[]'}
-																							}),
-																						_1: {
-																							ctor: '::',
-																							_0: A2(
-																								_elm_lang$html$Html$td,
-																								{ctor: '[]'},
-																								{
-																									ctor: '::',
-																									_0: _elm_lang$html$Html$text('1:30pm & 7pm - 60mins'),
-																									_1: {ctor: '[]'}
-																								}),
-																							_1: {
-																								ctor: '::',
-																								_0: A2(
-																									_elm_lang$html$Html$td,
-																									{ctor: '[]'},
-																									{
-																										ctor: '::',
-																										_0: _elm_lang$html$Html$text('-'),
-																										_1: {ctor: '[]'}
-																									}),
-																								_1: {
-																									ctor: '::',
-																									_0: A2(
-																										_elm_lang$html$Html$td,
-																										{ctor: '[]'},
-																										{
-																											ctor: '::',
-																											_0: _elm_lang$html$Html$text('-'),
-																											_1: {ctor: '[]'}
-																										}),
-																									_1: {ctor: '[]'}
-																								}
-																							}
-																						}
-																					}
-																				}
-																			}
-																		}
-																	}),
-																_1: {ctor: '[]'}
-															}
+															_1: {ctor: '[]'}
 														}
 													}
 												}),
