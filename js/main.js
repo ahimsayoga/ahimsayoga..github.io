@@ -17466,7 +17466,7 @@ var _user$project$Main$schedule = function (model) {
 																					_elm_lang$html$Html$a,
 																					{
 																						ctor: '::',
-																						_0: _elm_lang$html$Html_Attributes$href('https://www.google.ie/maps/place/1-112+Kib%C5%8Dgaoka,+Komatsu-shi,+Ishikawa-ken+923-0826,+Japan/@36.3974177,136.4965842,19z/data=!3m1!4b1!4m13!1m7!3m6!1s0x5ff85014c2398f95:0x541113e9b0c30afe!2sKibogaoka,+Komatsu,+Ishikawa+Prefecture+923-0826,+Japan!3b1!8m2!3d36.3985343!4d136.4975591!3m4!1s0x5ff8506b510285b5:0xd2e2361d1dfd949c!8m2!3d36.3974177!4d136.4971314'),
+																						_0: _elm_lang$html$Html_Attributes$href('https://goo.gl/maps/jhapfk1SZeE2'),
 																						_1: {ctor: '[]'}
 																					},
 																					{
