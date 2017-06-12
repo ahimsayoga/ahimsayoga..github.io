@@ -15111,7 +15111,10 @@ var _user$project$Routes$AboutEnR = {ctor: 'AboutEnR'};
 var _user$project$Routes$aboutEnR = A2(
 	_Bogdanp$elm_route$Route_ops[':='],
 	_user$project$Routes$AboutEnR,
-	_Bogdanp$elm_route$Route$static('/en/about'));
+	A2(
+		_Bogdanp$elm_route$Route_ops['</>'],
+		_Bogdanp$elm_route$Route$static('en'),
+		_Bogdanp$elm_route$Route$static('about')));
 var _user$project$Routes$AboutR = {ctor: 'AboutR'};
 var _user$project$Routes$aboutR = A2(
 	_Bogdanp$elm_route$Route_ops[':='],
