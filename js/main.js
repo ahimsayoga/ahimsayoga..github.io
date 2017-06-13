@@ -15107,14 +15107,6 @@ var _user$project$Routes$scheduleR = A2(
 	_Bogdanp$elm_route$Route_ops[':='],
 	_user$project$Routes$ScheduleR,
 	_Bogdanp$elm_route$Route$static('schedule'));
-var _user$project$Routes$AboutEnR = {ctor: 'AboutEnR'};
-var _user$project$Routes$aboutEnR = A2(
-	_Bogdanp$elm_route$Route_ops[':='],
-	_user$project$Routes$AboutEnR,
-	A2(
-		_Bogdanp$elm_route$Route_ops['</>'],
-		_Bogdanp$elm_route$Route$static('en'),
-		_Bogdanp$elm_route$Route$static('about')));
 var _user$project$Routes$AboutR = {ctor: 'AboutR'};
 var _user$project$Routes$aboutR = A2(
 	_Bogdanp$elm_route$Route_ops[':='],
@@ -15134,18 +15126,14 @@ var _user$project$Routes$sitemap = _Bogdanp$elm_route$Route$router(
 			_0: _user$project$Routes$aboutR,
 			_1: {
 				ctor: '::',
-				_0: _user$project$Routes$aboutEnR,
+				_0: _user$project$Routes$scheduleR,
 				_1: {
 					ctor: '::',
-					_0: _user$project$Routes$scheduleR,
+					_0: _user$project$Routes$instructorsR,
 					_1: {
 						ctor: '::',
-						_0: _user$project$Routes$instructorsR,
-						_1: {
-							ctor: '::',
-							_0: _user$project$Routes$contactR,
-							_1: {ctor: '[]'}
-						}
+						_0: _user$project$Routes$contactR,
+						_1: {ctor: '[]'}
 					}
 				}
 			}
@@ -15176,11 +15164,6 @@ var _user$project$Routes$toString = function (r) {
 				_Bogdanp$elm_route$Route$reverse,
 				_user$project$Routes$aboutR,
 				{ctor: '[]'});
-		case 'AboutEnR':
-			return A2(
-				_Bogdanp$elm_route$Route$reverse,
-				_user$project$Routes$aboutEnR,
-				{ctor: '[]'});
 		case 'ScheduleR':
 			return A2(
 				_Bogdanp$elm_route$Route$reverse,
@@ -15200,8 +15183,8 @@ var _user$project$Routes$toString = function (r) {
 			return _elm_lang$core$Native_Utils.crashCase(
 				'Routes',
 				{
-					start: {line: 60, column: 5},
-					end: {line: 80, column: 49}
+					start: {line: 54, column: 5},
+					end: {line: 71, column: 49}
 				},
 				_p2)('cannot render NotFound');
 	}
@@ -18122,7 +18105,29 @@ var _user$project$Main$footer = function (model) {
 																					{ctor: '[]'}),
 																				_1: {ctor: '[]'}
 																			}),
-																		_1: {ctor: '[]'}
+																		_1: {
+																			ctor: '::',
+																			_0: A2(
+																				_elm_lang$html$Html$a,
+																				{
+																					ctor: '::',
+																					_0: _elm_lang$html$Html_Attributes$href('https://www.youtube.com/channel/UCihAjjXntS8Q-5a4wBIolgQ'),
+																					_1: {ctor: '[]'}
+																				},
+																				{
+																					ctor: '::',
+																					_0: A2(
+																						_elm_lang$html$Html$i,
+																						{
+																							ctor: '::',
+																							_0: _elm_lang$html$Html_Attributes$class('fa fa-youtube'),
+																							_1: {ctor: '[]'}
+																						},
+																						{ctor: '[]'}),
+																					_1: {ctor: '[]'}
+																				}),
+																			_1: {ctor: '[]'}
+																		}
 																	}
 																}
 															}),
@@ -18425,8 +18430,6 @@ var _user$project$Main$content = function (_p0) {
 		case 'HomeR':
 			return _user$project$Main$home(_p3);
 		case 'AboutR':
-			return _user$project$Main$about(_p3);
-		case 'AboutEnR':
 			return _user$project$Main$about(_p3);
 		case 'ScheduleR':
 			return _user$project$Main$schedule(_p3);
