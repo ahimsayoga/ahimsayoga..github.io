@@ -17242,7 +17242,7 @@ var _user$project$Main$schedule = function (model) {
 																				_0: _elm_lang$html$Html$text(
 																					A2(
 																						_elm_lang$core$Basics_ops['++'],
-																						'7pm - 60',
+																						'10am - 60',
 																						A2(_ChristophP$elm_i18next$I18Next$t, model.translations, 'schedule.pricing.mins'))),
 																				_1: {ctor: '[]'}
 																			}),
