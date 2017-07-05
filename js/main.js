@@ -17423,7 +17423,7 @@ var _user$project$Main$schedule = function (model) {
 																									_0: _elm_lang$html$Html$text(
 																										A2(
 																											_elm_lang$core$Basics_ops['++'],
-																											'10am - 75',
+																											'10am - 60',
 																											A2(_ChristophP$elm_i18next$I18Next$t, model.translations, 'schedule.pricing.mins'))),
 																									_1: {ctor: '[]'}
 																								}),
@@ -17643,28 +17643,7 @@ var _user$project$Main$schedule = function (model) {
 																	A2(
 																		_elm_lang$core$Basics_ops['++'],
 																		'60',
-																		A2(
-																			_elm_lang$core$Basics_ops['++'],
-																			A2(_ChristophP$elm_i18next$I18Next$t, model.translations, 'schedule.pricing.mins'),
-																			A2(
-																				_elm_lang$core$Basics_ops['++'],
-																				' ',
-																				A2(
-																					_elm_lang$core$Basics_ops['++'],
-																					A2(_ChristophP$elm_i18next$I18Next$t, model.translations, 'schedule.pricing.class'),
-																					A2(
-																						_elm_lang$core$Basics_ops['++'],
-																						' - 1,200円, 75',
-																						A2(
-																							_elm_lang$core$Basics_ops['++'],
-																							A2(_ChristophP$elm_i18next$I18Next$t, model.translations, 'schedule.pricing.mins'),
-																							A2(
-																								_elm_lang$core$Basics_ops['++'],
-																								' ',
-																								A2(
-																									_elm_lang$core$Basics_ops['++'],
-																									A2(_ChristophP$elm_i18next$I18Next$t, model.translations, 'schedule.pricing.class'),
-																									' - 1,500円'))))))))),
+																		A2(_ChristophP$elm_i18next$I18Next$t, model.translations, 'schedule.pricing.mins'))),
 																_1: {ctor: '[]'}
 															}
 														}),
