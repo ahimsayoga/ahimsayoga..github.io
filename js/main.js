@@ -17639,11 +17639,7 @@ var _user$project$Main$schedule = function (model) {
 																}),
 															_1: {
 																ctor: '::',
-																_0: _elm_lang$html$Html$text(
-																	A2(
-																		_elm_lang$core$Basics_ops['++'],
-																		'60',
-																		A2(_ChristophP$elm_i18next$I18Next$t, model.translations, 'schedule.pricing.mins'))),
+																_0: _elm_lang$html$Html$text('1,200円'),
 																_1: {ctor: '[]'}
 															}
 														}),
