@@ -15096,27 +15096,39 @@ var _user$project$Routes$ContactR = {ctor: 'ContactR'};
 var _user$project$Routes$contactR = A2(
 	_Bogdanp$elm_route$Route_ops[':='],
 	_user$project$Routes$ContactR,
-	_Bogdanp$elm_route$Route$static('contact'));
+	A2(
+		_Bogdanp$elm_route$Route_ops['</>'],
+		_Bogdanp$elm_route$Route$static('en'),
+		_Bogdanp$elm_route$Route$static('contact')));
 var _user$project$Routes$InstructorsR = {ctor: 'InstructorsR'};
 var _user$project$Routes$instructorsR = A2(
 	_Bogdanp$elm_route$Route_ops[':='],
 	_user$project$Routes$InstructorsR,
-	_Bogdanp$elm_route$Route$static('instructors'));
+	A2(
+		_Bogdanp$elm_route$Route_ops['</>'],
+		_Bogdanp$elm_route$Route$static('en'),
+		_Bogdanp$elm_route$Route$static('instructors')));
 var _user$project$Routes$ScheduleR = {ctor: 'ScheduleR'};
 var _user$project$Routes$scheduleR = A2(
 	_Bogdanp$elm_route$Route_ops[':='],
 	_user$project$Routes$ScheduleR,
-	_Bogdanp$elm_route$Route$static('schedule'));
+	A2(
+		_Bogdanp$elm_route$Route_ops['</>'],
+		_Bogdanp$elm_route$Route$static('en'),
+		_Bogdanp$elm_route$Route$static('schedule')));
 var _user$project$Routes$AboutR = {ctor: 'AboutR'};
 var _user$project$Routes$aboutR = A2(
 	_Bogdanp$elm_route$Route_ops[':='],
 	_user$project$Routes$AboutR,
-	_Bogdanp$elm_route$Route$static('about'));
+	A2(
+		_Bogdanp$elm_route$Route_ops['</>'],
+		_Bogdanp$elm_route$Route$static('en'),
+		_Bogdanp$elm_route$Route$static('about')));
 var _user$project$Routes$HomeR = {ctor: 'HomeR'};
 var _user$project$Routes$homeR = A2(
 	_Bogdanp$elm_route$Route_ops[':='],
 	_user$project$Routes$HomeR,
-	_Bogdanp$elm_route$Route$static(''));
+	_Bogdanp$elm_route$Route$static('en'));
 var _user$project$Routes$sitemap = _Bogdanp$elm_route$Route$router(
 	{
 		ctor: '::',
