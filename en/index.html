@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // https://github.com/rafrex/spa-github-pages
+      // Copyright (c) 2016 Rafael Pedicini, licensed under the MIT License
+      // ----------------------------------------------------------------------
+      // This script checks to see if a redirect is present in the query string
+      // and converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function(l) {
+        if (l.search) {
+          var q = {};
+          l.search.slice(1).split('&').forEach(function(v) {
+            var a = v.split('=');
+            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+          });
+          if (q.p !== undefined) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + (q.p || '') +
+              (q.q ? ('?' + q.q) : '') +
+              l.hash
+            );
+          }
+        }
+      }(window.location))
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta content="Desciption" name="Shivam Yoga Center、ヨガクラス：　Kanazawa 金沢 & Komatsu 小松">
+    <meta content="Paul McCrodden" name="author">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="伝統的なShivam Yogaのクラスを通して、すべてのレベルの体をより良いものに。">
+    <meta name="twitter:site" content="@ahimsayogajp">
+    <meta name="twitter:title" content="Ahimsa Yoga - Shivam Yoga Center">
+    <meta name="twitter:description" content="Shivam Yoga センター、Kanazawa 金沢 & Komatsu 小松">
+    <meta name="twitter:creator" content="@ahimsayogajp">
+    <!-- Twitter Summary card images must be at least 120x120px -->
+    <meta name="twitter:image" content="http://ahimsayoga.jp/img/cover.jpg">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Ahimsa Yoga - Shivam Yoga Center">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="http://ahimsayoga.jp">
+    <meta property="og:image" content="http://ahimsayoga.jp/img/cover.jpg">
+    <meta property="og:description" content="Shivam Yoga センター、Kanazawa 金沢 & Komatsu 小松">
+    <meta property="og:site_name" content="Ahimsa Yoga">
+    <title>
+      Ahimsa Yoga - Shivam Yoga Center
+    </title><!-- Bootstrap core CSS via MaxCDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link href="css/app.css" rel="stylesheet"><!-- Font Awesome (version: 4.5.0) -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,700|Roboto:400,900' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id="elm-main"></div>
+
+    <!--<a class="scrolltop" href="#"><span class="fa fa-angle-up"></span></a>-->
+
+
+    <!-- JavaScript
+    ================================================== -->
+    <!-- jQuery (version: 2.1.4) via googleapis or path to local copy ie. plugins/jquery/jquery.min.js -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+    </script> <!-- Tether plugin, needed for tooltip plugin -->
+
+    <script src="https://cdn.rawgit.com/HubSpot/tether/master/dist/js/tether.min.js">
+    </script> <!-- Required plugin: stellar.js http://markdalgleish.com/projects/stellar.js/ -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stellar.js/0.6.2/jquery.stellar.min.js">
+    </script> <!-- Bootstrap (version: v4.0.0-alpha.2) JS via MaxCDN or path to local copy ie. plugins/bootstrap/dist/js/bootstrap.min.js-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha/js/bootstrap.min.js">
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js">
+    </script> <!-- Custom Javascript -->
+
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+    <script>require('js/initialize');</script>
+    <script src="js/script.js"></script>
+    <script src="http://maps.google.com/maps/api/js?key=AIzaSyBR_5KyznZ3xak4v2hbqrqUgj6qQ_K870Q"></script>
+
+    <script type="text/javascript">
+      $(function () {
+
+      function initMap() {
+          var location = new google.maps.LatLng(36.555605, 136.668071);
+
+          var mapCanvas = document.getElementById('map');
+          var mapOptions = {
+              center: location,
+              zoom: 16,
+              panControl: false,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          }
+          var map = new google.maps.Map(mapCanvas, mapOptions);
+
+          var markerImage = 'img/marker.png';
+
+          var marker = new google.maps.Marker({
+              position: location,
+              map: map,
+              icon: markerImage
+          });
+
+          var contentString = '<div class="info-window">' +
+                  '<h3>Ahimsa Center</h3>' +
+                  '<div class="info-content">' +
+                  '<p>伝統的なShivamヨガクラスに参加しましょう。英語と日本語でクラスがあります。' +
+                  'Join our Traditional Shivam Yoga classes in English and Japanese. ' +
+                  'Tel: 070-4440-8396. Om Shiva!</p>' +
+                  '</div>' +
+                  '</div>';
+
+          var infowindow = new google.maps.InfoWindow({
+              content: contentString,
+              maxWidth: 400
+          });
+
+          marker.addListener('click', function () {
+              infowindow.open(map, marker);
+          });
+
+        }
+        var observeDOM = (function(){
+            var MutationObserver = window.MutationObserver || window.WebKitMutationObserver,
+                eventListenerSupported = window.addEventListener;
+
+            return function(obj, callback){
+                if( MutationObserver ){
+                    // define a new observer
+                    var obs = new MutationObserver(function(mutations, observer){
+                        if( mutations[0].addedNodes.length || mutations[0].removedNodes.length )
+                            callback();
+                    });
+                    // have the observer observe foo for changes in children
+                    obs.observe( obj, { childList:true, subtree:true });
+                }
+                else if( eventListenerSupported ){
+                    obj.addEventListener('DOMNodeInserted', callback, false);
+                    obj.addEventListener('DOMNodeRemoved', callback, false);
+                }
+            };
+        })();
+
+        // Observe a specific DOM element:
+        var main = document.getElementById('elm-main');
+        observeDOM(main ,function(){
+          var map = document.getElementById('map');
+          if (map && main.contains(map) && !map.hasChildNodes()) {
+            initMap();
+          }
+        });
+      });
+    </script>
+    <script src="js/parallax.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-98124033-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
