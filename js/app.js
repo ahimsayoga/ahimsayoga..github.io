@@ -147,11 +147,59 @@ var __makeRelativeRequire = function(require, mappings, pref) {
     return require(name);
   }
 };
-require.register("elm/Main.elm", function(exports, require, module) {
+require.register("elm/App.elm", function(exports, require, module) {
 
 });
 
-;require.register("elm/Routes.elm", function(exports, require, module) {
+;require.register("elm/Footer.elm", function(exports, require, module) {
+
+});
+
+;require.register("elm/LangWidget.elm", function(exports, require, module) {
+
+});
+
+;require.register("elm/Main.elm", function(exports, require, module) {
+
+});
+
+;require.register("elm/Menu.elm", function(exports, require, module) {
+
+});
+
+;require.register("elm/Page.elm", function(exports, require, module) {
+
+});
+
+;require.register("elm/Pages/About.elm", function(exports, require, module) {
+
+});
+
+;require.register("elm/Pages/Contact.elm", function(exports, require, module) {
+
+});
+
+;require.register("elm/Pages/Home.elm", function(exports, require, module) {
+
+});
+
+;require.register("elm/Pages/Instructors.elm", function(exports, require, module) {
+
+});
+
+;require.register("elm/Pages/Schedule.elm", function(exports, require, module) {
+
+});
+
+;require.register("elm/Routing.elm", function(exports, require, module) {
+
+});
+
+;require.register("elm/Types.elm", function(exports, require, module) {
+
+});
+
+;require.register("elm/View.elm", function(exports, require, module) {
 
 });
 
